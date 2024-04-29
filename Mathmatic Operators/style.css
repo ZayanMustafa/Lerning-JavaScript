@@ -1,0 +1,14 @@
+.parent{
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+    /* background: rgba(233, 110, 10, 0.467); */
+   border: thick !important;
+}
+.etsy{
+    background-color: blueviolet !important;
+    padding-left: 18%;
+    /* margin-right: 2%; */
+    margin-bottom: .5%;
+    text-align: center !important;
+    
+}
