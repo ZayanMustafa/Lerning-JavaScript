@@ -10,9 +10,29 @@
     margin-left: 28% !important;
     font-size: 500% !important;
 } 
-.d-flex{
-    margin-left: 42%;
-    height: 10% !important;
-    width: 30% !important;
+
+.box {
+  width: 700px !important;
+  height: 250px !important;
+  margin-left: 20% !important;
+  padding-bottom: 30%;
+  /* margin-bottom: 65px !important; */
+  background: #e98503 !important;
+  font-size: 1398%;
+  display: flexbox !important;
+  align-items: self-end !important;
 }
+
+.hmm{
+  display: inline-block;
+  align-items: start !important;
+  /* margin-bottom: 75px !important; */
+}
+
+.hmmm{
+  display: inline-block;
+  /* margin-bottom: 555px !important; */
+     
+}
+
   

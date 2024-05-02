@@ -49,7 +49,23 @@ console.log(few.getMilliseconds())
 
 // For Day's :
 console.log(few.getDay())
+var hours = document.getElementById("hours")
+var minutes = document.getElementById("minutes")
+var seconds = document.getElementById("seconds")
 
-var hours = document.getElementById('hours')
-var minutes = document.getElementById('minutes')
-var seconds = document.getElementById('seconds')
+// for adding
+if  (hours < 10){
+    hours = '0' + hours;
+}
+if  (minutes < 10) {
+    minutes =   '0'  + minutes;
+}
+setInterval(function(){
+    var currentDate = new Date();
+    var currentHour = currentDate.getHours();
+    
+    hours.innerText = currentDate.getHours();
+    minutes.innerText = currentDate.getMinutes();
+    seconds.innerText = currentDate.getSeconds();
+    
+}, 1000);
