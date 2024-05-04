@@ -12,34 +12,38 @@
     <h1 class="text-primary hm ms-5"> Making Countdown</h1>
        <!-- Todays Date input bar  -->
     <!-- <input class="ms-5" type="text" id="userInput"> -->
-    <button type="button" onclick="sumbitBtn()" class="btn btn-secondary">Sumbit</button>
-    <div class="input-group">
-        <span class="input-group-text">MM/DD/YY</span>
-        <input type="text" placeholder="Month" class="form-control">
-        <input type="text" placeholder="Date" class="form-control">
-        <input type="text" placeholder="Year" class="form-control">
-        
+    <div class="input-group container">
+        <input type="text"  min="0" max="02" placeholder="Month" class="form-control" id="Month" >
+        <input type="text"  min="0" max="02" placeholder="Date" class="form-control"  id="Date" >
+        <input type="text"  min="0" max="04" placeholder="Year" class="form-control"  id="Year" >
+        <!-- <span class="input-group-text"></span>  -->
+        <button type="button" onclick="sumbitBtn()" class="btn btn-primary ">Sumbit</button>
     </div>
-    <p id="displayArea"></p>   
+
+    <!-- Display Area  -->
 
     <div class="container text-center">
         <div class="border border-5 mb-3 row">
-          <div class="col">
-                Remaning Days
-        </div>
+          <div  class="col">
+           <div id="hm">.</div>
+           <h1>Remaining</h1> 
+            </div>
         <div class="col border border-success">
-                Remainig Hours
+        <h1>Remaining</h1> 
           </div>
         </div>
         <div class="border border-5 row">
             <div class="col border border-success">
-                Remainig Minutes
-            </div>
+        <h1>Remaining</h1> 
+          </div>
              <div class="col">
-                Remaninig Seconds 
+         <h1>Remaining</h1> 
             </div>
         </div>
       </div>
+
+
+      <script src="script.js"></script>
 
 
 

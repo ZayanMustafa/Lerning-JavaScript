@@ -15,10 +15,10 @@
   width: 700px !important;
   height: 250px !important;
   margin-left: 20% !important;
-  padding-bottom: 30%;
+  padding-bottom: 20% !important;
   /* margin-bottom: 65px !important; */
   background: #e98503 !important;
-  font-size: 1180%;
+  font-size: 1190%;
   display: flexbox !important;
   align-items: self-end !important;
 }
@@ -31,7 +31,7 @@
 
 .hmmm{
   display: inline-block;
-  /* margin-bottom: 555px !important; */
+  margin-bottom: 555px !important;
      
 }
 
