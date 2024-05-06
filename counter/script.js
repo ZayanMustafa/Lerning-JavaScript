@@ -1,20 +1,24 @@
-document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
     var input1 = document.getElementById('Month');
     var input2 = document.getElementById('Day');
     var input3 = document.getElementById('Year');
     
+    // var input01 = document.getElementById('Month').value;
+    // var input02 = document.getElementById('Day').value;
+    // var input03 = document.getElementById('Year').value;
+    
 
 
     input1.addEventListener('keydown', function(event) {
-    //   if (input1 > 12) {alert("Enter Correct Month ")}
-        if (event.key === 'Enter') {
+      // if (input01 < 12) {alert("Enter Correct Month ")}
+      if (event.key === 'Enter') {
         event.preventDefault();
         input2.focus(); 
       }
     });
   
     input2.addEventListener('keydown', function(event) {
-    //   if (input2 > 31){alert("Enter Correct Date ")}
+      // if (input02 < 31){alert("Enter Correct Date ")}
       if (event.key === 'Enter') {
         event.preventDefault(); 
         input3.focus(); 
@@ -22,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     input3.addEventListener('keydown', function(event) {
-    //   if (input2 < 2023){alert("Enter Correct Year ")}
+      // if (input03 < 2023){alert("Enter Correct Year ")}
         if (event.key === 'Enter') {
           event.preventDefault(); 
           btn.focus(); 
@@ -54,12 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (timeDifference < 0) {
       clearInterval(countdownInterval);
       document.getElementById('counter').innerHTML = 'This date is gone....';
-    }
-    if (userInput == null ){
+     }
+     if (userInput == null ){
         alert("Enter Value!")
-    }
-  }, 1000);
+        }
+       }, 1000); 
 
   }
-
+   console.log("Hasan") 
   
