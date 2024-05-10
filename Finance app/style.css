@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.mainbar {
+    width: 350px;
+    margin: 100px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.Income{
+    margin-bottom: 5px;
+
+}
+button{
+    border: none;
+    background-color: #056e4b;
+    color: rgb(255, 255, 255);
+}
+
+.update{
+    display: inline !important;
+}
