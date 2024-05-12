@@ -52,20 +52,22 @@ console.log(few.getDay())
 var hours = document.getElementById("hours")
 var minutes = document.getElementById("minutes")
 var seconds = document.getElementById("seconds")
-
+var colon = document.getElementById("colon")
+var colon1 = document.getElementById("colon1")
 // for adding
-if  (hours < 10){
-    hours = '0' + hours;
-}
-if  (minutes < 10) {
-    minutes =   '0'  + minutes;
-}
 setInterval(function(){
     var currentDate = new Date();
     var currentHour = currentDate.getHours();
-    
     hours.innerText = currentDate.getHours();
     minutes.innerText = currentDate.getMinutes();
     seconds.innerText = currentDate.getSeconds();
-    
+   colon.innerText= ":" 
+   colon1.innerText= ":" 
+
+    if  (hours <= 10){
+    hours = 0 + hours;
+    }
+    if  (minutes <= 10) {
+        minutes =   0  + minutes;
+    }
 }, 1000);

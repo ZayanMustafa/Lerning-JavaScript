@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance App</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <div class="mainbar">
-    <h1 >Finance App</h1>
-   <div class="Income">
-       <input type="number" placeholder="Add Income Hear" name="Income" id="income">
-       <button onclick="Hasan()"> Add Income</button>
-   </div>
-    <div class="Expence">
-        <input type="number" placeholder="Add Expence Hear" name="Expence" id="expence">
-        <button onclick="Raza()"> Add Expence</button>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Enter Income</h3>
+            <input type="number" id="incomeInput" class="form-control mb-3">
+            <button class="btn btn-success" onclick="addIncome()">Add Income</button>
+        </div>
+        <div class="col-md-4">
+          <h3>Enter Expense</h3>
+          <input type="number" id="expenseInput" class="form-control mb-3">
+          <button class="btn btn-primary" onclick="addExpense()">Add Expense</button>
+        </div>
     </div>
-          <span>
-        <h3>Income :</h3>
-               <p>0</p>
-          </span>
-            <span>
-                <h3>Expence :</h3>
-                <p>0</p>
-            </span>
-            
-            <span>
-                <h3>Saving :</h3>
-                <p>0</p>
-            </span>
-            
-       
-
-
-    
-
-
-
-
-
-   </div>
-
-
-
-   <script src="script.js"></script> 
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <span style="font-size: xx-large;">Income :</span>
+        <span id="incomeTotal" style="font-size: x-large;">0</span>
+      </div>
+      <div class="col-md-4">
+        <span style="font-size: xx-large;">Expenses :</span>
+        <span id="expenseTotal" style="font-size: x-large;">0</span>
+      </div>
+      <div class="col-md-4">
+        <span style="font-size: xx-large;">Savings :</span>
+        <span id="savingsTotal" style="font-size: x-large;">0</span>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
