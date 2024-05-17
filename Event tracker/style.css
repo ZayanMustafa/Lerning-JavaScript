@@ -1,0 +1,7 @@
+.container{
+    border: 25px;
+    border-color: black;
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    display: flex-box;
+}
