@@ -1,7 +1,15 @@
+body{
+    color: #c29999b6;
+}
 .container{
-    border: 25px;
-    border-color: black;
-    background-color: brown;
-    color: rgb(255, 255, 255);
-    display: flex-box;
+  border: 25px;
+  background: #860101;
+
+}
+
+.box1{
+    background: #f30000;
+}
+.box2{
+    background-color: aqua;
 }
