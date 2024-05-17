@@ -1,37 +1,38 @@
-var question = [
-    "1. Build a simple To-Do list application where users can add, delete, and mark tasks as completed.",
-    "2. Create a countdown timer that takes user input for the time and counts down to zero.",
-    "3. Develop a basic calculator that can perform addition, subtraction, multiplication, and division.",
-    "4. Design a random quote generator that displays a new quote each time a button is clicked.",
-    "5. Make a color guessing game where the user has to guess the correct color from RGB values.",
-    "6. Create a digital clock that displays the current time and updates every second.",
-    "7. Build a simple form validation script that checks user input in a form for specific criteria.",
-    "8. Develop a Rock, Paper, Scissors game where the user plays against the computer.",
-    "9. Create a photo gallery with a slideshow feature that automatically changes images every few seconds.",
-    "10. Design a tip calculator that calculates the tip amount based on the bill total and tip percentage input by the user."
+var quote = [
+    
+    " The only way to do great work is to love what you do.- Steve Jobs",
+    " Life is what happens when you're busy making other plan- John Lennon",
+    " Get busy living or get busy dying.  - Stephen King",
+    " You have within you right now, everything you need to deal with whatever the world can throw at you.  - Brian Tracy",
+    " Believe you can and you're halfway there. - Theodore Roosevelt",
+    " The purpose of our lives is to be happy. - Dalai Lama",
+    " Success is not final, failure is not fatal: it is the courage to continue that counts.  - Winston Churchill",
+    " Your time is limited, don't waste it living someone else's life.  - Steve Jobs",
+    " Life is short, and it is up to you to make it sweet. - Sarah Louise Delany" ,
+    " You only live once, but if you do it right, once is enough. - Mae West",
+    "Believe you can and you're halfway there.- Theodore Roosevelt" ,
+    "The only limit to our realization of tomorrow will be our doubts of today.- Franklin D. Roosevelt" ,
+    "The future belongs to those who believe in the beauty of their dreams.  - Eleanor Roosevelt",
+    "Success is walking from failure to failure with no loss of enthusiasm. - Winston Churchill",
+    "You are never too old to set another goal or to dream a new dream.  - C.S. Lewis",
+    "Dream big and dare to fail.  - Norman Vaughan",
+    "In the middle of difficulty lies opportunity.  - Albert Einstein",
+    "The journey of a thousand miles begins with one step. - Lao Tzu " 
 ]
-
-var allBoxes = document.getElementsByClassName("box");
-
-console.log("boxes=>", allBoxes);
-
-for (var i = 0; i < allBoxes.length; i++) {
-  allBoxes[i].addEventListener("click", function () {
-    clearAll();
-    this.style.backgroundColor = "white";
-    this.style.color = "black";
-    this.style.fontSize = "18px";
-    // var que = questions[this.innerText - 1];
-    var que = question[Math.floor(Math.random() * 10)];
-    this.innerText = que;
-  });
-}
-
-function clearAll() {
-  for (var i = 0; i < allBoxes.length; i++) {
-    allBoxes[i].style.backgroundColor = "black";
-    allBoxes[i].style.color = "white";
-    allBoxes[i].style.fontSize = "30px";
-    allBoxes[i].innerText = i + 1;
-  }
-}
+    console.log(quote)
+// var display = document.getElementsById('button')
+// display.addEventListener('click', function() {
+    //   alert('Button clicked!');
+    // });
+    
+    var display = document.getElementById('button');
+    display.addEventListener('click', function() {
+        this.style.backgroundColor = "white";
+        this.style.color = "black";
+        this.style.fontSize = "95px";
+        var hasan = quote[Math.floor(Math.random() * 18)];
+        console.log(hasan)
+        display .innerText = hasan;
+        clearAll();
+        // alert("Hasaaaan! Chal raha heay")
+    } )
