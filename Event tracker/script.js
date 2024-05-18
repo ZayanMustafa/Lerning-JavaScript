@@ -16,23 +16,97 @@ var quote = [
     "Success is walking from failure to failure with no loss of enthusiasm. - Winston Churchill",
     "You are never too old to set another goal or to dream a new dream.  - C.S. Lewis",
     "Dream big and dare to fail.  - Norman Vaughan",
-    "In the middle of difficulty lies opportunity.  - Albert Einstein",
-    "The journey of a thousand miles begins with one step. - Lao Tzu " 
-]
+    " In the middle of difficulty lies opportunity.  - Albert Einstein",
+    "The journey of a thousand miles begins with one step. - Lao Tzu " ,
+    "What you do,what you get - Zayyan Mustafa",
+    "Where there is love, there is life." - "Mahatma Gandhi",
+    "Love is composed of a single soul inhabiting two bodies." - "Aristotle",
+    "To love and be loved is to feel the sun from both sides." - "David Viscott",
+    "Love recognizes no barriers. It jumps hurdles, leaps fences, penetrates walls to arrive at its destination full of hope." - "Maya Angelou",
+    "Love is the only force capable of transforming an enemy into a friend." - "Martin Luther King Jr.",
+    "The best thing to hold onto in life is each other." - "Audrey Hepburn",
+    "We accept the love we think we deserve." - "Stephen Chbosky",  
+    "To love oneself is the beginning of a lifelong romance. - Oscar Wilde",
+    "Love is when the other person's happiness is more important than your own." - "H. Jackson Brown Jr.",
+    "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage." - "Lao Tzu",
+    "The only way to do great work is to love what you do. - Steve Jobs",
+    "Don't watch the clock; do what it does. Keep going. -  Sam Levenson" ,
+    "Success is not the key to happiness. Happiness is the key to success. - Albert Schweitzer",
+    "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
+    "It does not matter how slowly you go as long as you do not stop. - Confucius",
+    "Believe you can and you're halfway there. - Theodore Roosevelt",
+    "The harder the conflict, the greater the triumph. - George Washington",
+    "Don't wait. The time will never be just right. - Napoleon Hill" ,
+    "What you get by achieving your goals is not as important as what you become by achieving your goals." - "Zig Ziglar",
+    "The only limit to our realization of tomorrow is our doubts of today. - Franklin D. Roosevelt",    
+    "Too many people spend money they haven't earned to buy things they don't want to impress people they don't like. - Will Rogers",
+    "Money is a terrible master but an excellent servant. - P.T. Barnum",
+    " It's not how much money you make, but how much money you keep, how hard it works for you, and how many generations you keep it for. - Robert Kiyosaki",
+    "A wise person should have money in their head, but not in their heart. - Jonathan Swift",
+    "Wealth consists not in having great possessions, but in having few wants." - "Epictetus",
+    "An investment in knowledge pays the best interest. - Benjamin Franklin",
+    "The best way to predict the future is to create it. - Peter Drucker",
+    "Formal education will make you a living; self-education will make you a fortune. - Jim Rohn",
+    "The stock market is filled with individuals who know the price of everything, but the value of nothing. - Philip Fisher",
+    "Financial freedom is available to those who learn about it and work for it. - Robert Kiyosaki",
+    "Selfishness is not living as one wishes to live, it is asking others to live as one wishes to live." - "Oscar Wilde",
+    "Almost every sinful action ever committed can be traced back to a selfish motive." - "John Piper",
+    "Selfishness is the greatest curse of the human race.- William E. Gladstone",
+    "Selfish persons are incapable of loving others, but they are not capable of loving themselves either." - "Erich Fromm",
+    "Intensely selfish people are always very decided as to what they wish. - George Eliot",    
+    "A man wrapped up in himself makes a very small bundle.  - Benjamin Franklin",
+    "Selfishness must always be forgiven you know, because there is no hope of a cure." - "Jane Austen",
+    "Selfishness is the root and source of all natural and moral evils. - John Stuart Mill",
+    "No man will work for your interests unless they are his. - David Seabury",
+    "The selfish man suffers more from his selfishness than he from whom that selfishness withholds some important benefit." - "Ralph Waldo Emerson",
+    "Attitude is a little thing that makes a big difference. - Winston Churchill",
+    "Your attitude, not your aptitude, will determine your altitude. - Zig Ziglar",
+    "People may hear your words, but they feel your attitude. - John C. Maxwell",
+    "Excellence is not a skill. It is an attitude. - Ralph Marston",
+    "The only disability in life is a bad attitude. - Scott Hamilton",
+    "Weakness of attitude becomes weakness of character. - Albert Einstein",
+    "A positive attitude causes a chain reaction of positive thoughts, events, and outcomes." - "Wade Boggs",
+    "Attitude is everything, so pick a good one." - "Wayne Dyer",
+    "If you don't like something, change it. If you can't change it, change your attitude. - Maya Angelou",
+    "The greatest discovery of all time is that a person can change his future by merely changing his attitude. - Oprah Winfrey",
+    "Success usually comes to those who are too busy to be looking for it. - Henry David Thoreau",
+    "Opportunities don't happen, you reate them." - "Chris Grosser",
+    "Don't be afraid to give up the good to go for the great." - "John D. Rockefeller",
+    "The road to success and the road to failure are almost exactly the same." - "Colin R. Davis",
+    "Success is not how high you have climbed, but how you make a positive difference to the world." - "Roy T. Bennett",
+    "Success seems to be connected with action. Successful people keep moving. They make mistakes, but they don't quit." - "Conrad Hilton",
+    "The way to get started is to quit talking and begin doing." - "Walt Disney",
+    "Success is walking from failure to failure with no loss of enthusiasm." - "Winston Churchill",
+    "Happiness is not something ready-made. It comes from your own actions." - "Dalai Lama",
+    "The purpose of our lives is to be happy." - "Dalai Lama",
+    "   Happiness depends upon ourselves." - "Aristotle",
+    "For every minute you are angry you lose sixty seconds of happiness." - "Ralph Waldo Emerson",
+    " Happiness is not a goal it is a by product. - Eleanor Roosevelt",
+    "The most important thing is to enjoy your life - to be happy - it is all that matters. - Audrey Hepburn" ,
+    "Happiness is when what you think, what you say, and what you do are in harmony." - "Mahatma Gandhi",
+    "There is only one happiness in this life, to love and be loved." - "George Sand",
+    "Happiness is the secret to all beauty. There is no beauty without happiness." - "Christian Dior",
+    "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared. - Buddha",
+    "The only true wisdom is in knowing you know nothing. - Socrates",
+    "Turn your wounds into wisdom." - "Oprah Winfrey",
+    "The journey of a thousand miles begins with one step." - "Lao Tzu",
+    "Wisdom is not a product of schooling but of the lifelong attempt to acquire it." - "Albert Einstein",
+    "Knowledge speaks, but wisdom listens." - "Jimi Hendrix",
+    "Wisdom is the reward you get for a lifetime of listening when you would rather have talked." - "Mark Twain",
+    "It is not the man who has too little, but the man who craves more, that is poor." - "Seneca",
+    "Do not seek to follow in the footsteps of the wise; seek what they sought." - "Matsuo Basho",
+    "Patience is the companion of wisdom." - "Saint Augustine",
+    "Wisdom begins in wonder." - "Socrates"]
     console.log(quote)
-// var display = document.getElementsById('button')
-// display.addEventListener('click', function() {
-    //   alert('Button clicked!');
-    // });
-    
-    var display = document.getElementById('button');
+     
+    var display = document.getElementById("button");
     display.addEventListener('click', function() {
         this.style.backgroundColor = "white";
         this.style.color = "black";
         this.style.fontSize = "95px";
-        var hasan = quote[Math.floor(Math.random() * 18)];
+        var hasan = quote[Math.floor(Math.random() * quote.length)];
         console.log(hasan)
-        display .innerText = hasan;
-        clearAll();
-        // alert("Hasaaaan! Chal raha heay")
-    } )
+        display.innerText = hasan;
+        // clearAll();  
+    })
+ 
