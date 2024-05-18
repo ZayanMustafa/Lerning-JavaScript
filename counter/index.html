@@ -10,9 +10,9 @@
     <div class="main">
         <h1 class="margin">Countdown</h1>
         <div class="input">
-        <input type="text" style="width: 45px;" id="Month" placeholder="Month">
-        <input type="text" style="width: 45px;" id="Day" placeholder="Date ">
-        <input type="text" style="width: 45px;" id="Year" placeholder="Year">
+        <input type="number" id="Month" placeholder="Month" min="1" max="12">
+        <input type="number" id="Day" placeholder="Date" min="1" max="31">
+        <input type="number" id="Year" placeholder="Year" min="1999">
         </div>
         <button onclick="hasan()" class="btn" id="btn" type="button">Lets check</button>
         <div id="counter" class="Timing"></div>

@@ -10,7 +10,7 @@
 
 
     input1.addEventListener('keydown', function(event) {
-      // if (input01 < 12) {alert("Enter Correct Month ")}
+      // if (input1 > 12) {alert("Enter Correct Month ")}
       if (event.key === 'Enter') {
         event.preventDefault();
         input2.focus(); 

@@ -1,40 +1,50 @@
-.container{
+body{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20%;
+    background-color: rgb(224, 209, 209);
+}
+.main{
+    height: 280px;
+    width: 280px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(78, 0, 0);
+    box-shadow: 0 0 12px rgb(136, 10, 161);
+    border-radius : 13px;
 }
 
 .margin{
-    /* margin-left: 35cap; */
-    /* margin-top: 30%;
-    margin-left: 20%;*/
-    margin-top: 20%; 
-    margin-left: 08%;
-    font-size: 300%;
-    color: aqua;
+    padding-left: 10px;
+    font-size: 250%;
+    color: rgb(44, 2, 53);
 }
-/* 
+
+input{
+    margin-top: 8px;
+}
+
+
 .input{
-    margin-top: 30%;
-    margin-inline-start: 20%;
-    padding-right: 20%;
-} */
-.btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff !important;
+    margin-inline-start: 50px;
+}
+
+.btn{
+    font-size: 20px;
+    background-color: rgb(77, 11, 92);
     color: white;
     border: none;
     cursor: pointer;
-    margin-left: 40%;
+    margin-left: 85px;
     margin-top: 02%;
 }
   
 .btn:hover {
-    background-color: #0056b3;
+    background-color: rgb(162, 10, 192);
   }
 
-.Timing{
- margin-right: 20%;
+#counter{
+ margin-right: 20px;
+
 }   
+
