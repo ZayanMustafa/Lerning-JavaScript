@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(133, 133, 86);
+}
+.container{
+    background-color: rgb(65, 143, 117);
+    border:5px solid;
+    margin : 150px 180px; 
+    padding:  0  0 200px;
+}
+h3{
+    margin-top: 2px;
+    text-align: center;
+    /* background-color: #fff; */
+}

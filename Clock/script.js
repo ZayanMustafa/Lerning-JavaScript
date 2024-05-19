@@ -22,12 +22,12 @@
 // console.log(object)
 
 // Date is used for  "Date and Time as Country" 
-var few = new(Date)
-console.log(few)
+// var few = new(Date)
+// console.log(few)
 
 // toLocaleDateString() converts a date into simple date (Month,Date,Year)
-var dateString = few.toLocaleDateString();
-console.log(dateString);
+// var dateString = few.toLocaleDateString();
+// console.log(dateString);
 
 // Day Names : 
 // var dayNames = ['Monday' , 'Tuesday' , 'Wednesday' , 'Thursday' ,'Friday' , 'Saturday' , 'Sunday']
@@ -37,18 +37,18 @@ console.log(dateString);
 // console.log( 'Day name :', dayNames[few.getDay()])
 
 // Get Hours Mints Second from var = "few"
-console.log(few.getDate())
-console.log(few.getMonth())
-console.log(few.getFullYear())
+// console.log(few.getDate())
+// console.log(few.getMonth())
+// console.log(few.getFullYear())
 
 // For Timing : 
-console.log(few.getHours())
-console.log(few.getMinutes())
-console.log(few.getSeconds())
-console.log(few.getMilliseconds())
+// console.log(few.getHours())
+// console.log(few.getMinutes())
+// console.log(few.getSeconds())
+// console.log(few.getMilliseconds())
 
 // For Day's :
-console.log(few.getDay())
+// console.log(few.getDay())
 var hours = document.getElementById("hours")
 var minutes = document.getElementById("minutes")
 var seconds = document.getElementById("seconds")
