@@ -5,10 +5,16 @@ body {
     background-color: rgb(65, 143, 117);
     border:5px solid;
     margin : 150px 180px; 
-    padding:  0  0 200px;
+    padding:  0px  0px 20px;
 }
 h3{
     margin-top: 2px;
     text-align: center;
-    /* background-color: #fff; */
+}
+input{
+    border:5px solid;
+    border-radius: 05px;
+    margin: 0 35px;
+    padding: 5px 200px 85px;
+    text-align: start;
 }
