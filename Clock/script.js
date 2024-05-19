@@ -56,6 +56,15 @@ var colon = document.getElementById("colon")
 var colon1 = document.getElementById("colon1")
 // for adding
 setInterval(function(){
+    if  (hours <= 10){
+    hours = 0 + hours;
+    }
+    if  (minutes <= 10) {
+        minutes =   0  + minutes;
+    }
+    if (seconds >= 9 ){
+        seconds = 0 + seconds
+    }
     var currentDate = new Date();
     var currentHour = currentDate.getHours();
     hours.innerText = currentDate.getHours();
@@ -64,10 +73,4 @@ setInterval(function(){
    colon.innerText= ":" 
    colon1.innerText= ":" 
 
-    if  (hours <= 10){
-    hours = 0 + hours;
-    }
-    if  (minutes <= 10) {
-        minutes =   0  + minutes;
-    }
 }, 1000);

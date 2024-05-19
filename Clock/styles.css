@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #ddcc6b;
 }
 .heading{
   display: flex;
@@ -10,21 +10,28 @@ body {
   padding: 10px;
   width: 900px; 
   border-radius: 20px;
-  font-family: Georgia, 'Times New Roman';
   color: black
 }
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 90px;
-  width: 9000px; 
-  padding: 8px;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.12);
+h1{
   font-family: Georgia, 'Times New Roman';
-  font-size: 200px;
+  margin-left: 150px;
+  padding-top: 10px;
+
 }
-
-
+.container{
+  background-color: rgb(255, 209, 6);
+  padding-left: 0px auto;
+  width: 600px;
+  margin: 300px 350px auto;
+  margin-right: 120px;
+  font-family: Georgia, sans-serif;
+}
+.row{
+  height: 100px ;
+  font-size: 65px;
+  color: #ffffff;
+}
+.text{
+  font-size: 10px !important;
+  margin: 10px auto ;
+}
