@@ -36,6 +36,12 @@ h1{
   margin: 10px auto ;
 } */
 
+ .row{
+  width: 900px;
+}
+/*.column{
+  width: 90px !important;
+} */
 .column{
   width: 120px !important;
   background-color: rgb(2, 131, 131) !important;
