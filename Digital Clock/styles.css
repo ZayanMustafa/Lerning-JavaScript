@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   background-color: #ddcc6b;
 }
@@ -34,4 +34,13 @@ h1{
 .text{
   font-size: 10px !important;
   margin: 10px auto ;
+} */
+
+.column{
+  width: 120px !important;
+  background-color: rgb(2, 131, 131) !important;
+  color: rgb(255, 255, 255);
+}
+.text{
+  font-size: 3px !important;
 }

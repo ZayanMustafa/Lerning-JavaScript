@@ -55,3 +55,8 @@ input{
     margin-left: 25px;
     margin-top: 15px;
 }
+hr{
+    width: 250px;
+    background-color: rgb(77, 11, 92);
+
+}
