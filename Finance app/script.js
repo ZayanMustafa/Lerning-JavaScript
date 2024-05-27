@@ -27,7 +27,7 @@ function addIncome() {
 
 function updateTotals() {
   const savingsTotal = incomeTotal - expenseTotal;
-  document.getElementById('expenseTotal').textContent = `$${expenseTotal.toFixed(2)}`;
-  document.getElementById('incomeTotal').textContent = `$${incomeTotal.toFixed(2)}`;
-  document.getElementById('savingsTotal').textContent = `$${savingsTotal.toFixed(2)}`;
+  document.getElementById('expenseTotal').textContent = `Rupees ${expenseTotal.toFixed(2)}`;
+  document.getElementById('incomeTotal').textContent = `Rupees ${incomeTotal.toFixed(2)}`;
+  document.getElementById('savingsTotal').textContent = `Rupees ${savingsTotal.toFixed(2)}`;
 }
