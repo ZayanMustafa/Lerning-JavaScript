@@ -10,3 +10,8 @@
     background-color: aqua !important;
     margin-top: 2px !important;    
 }
+.color{
+   height: 200px;
+   width:200px;
+   background-color : red;
+}
