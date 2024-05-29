@@ -13,7 +13,7 @@ Think of the web as your playground. With JavaScript, you can make websites danc
 <br>
 And hey, if you ever feel overwhelmed, just think of JavaScript as a <b>pizza</b>. 🍕 Even when it's a bit messy, it's still pretty awesome. Each new concept you master is like adding another delicious topping.
 <br>
-So, ${userNameTop} , keep <b>experimenting</b>, keep breaking things (it’s how you learn), and don’t forget to console.log your successes, no matter how small. You've got this!
+So, ${userNameTop} , keep <b>experimenting</b>, keep breaking things (it’s how you learn), and don’t forget to <code>console.log </code> your successes, no matter how small. You've got this!
 <br>
 Happy coding, ${userNameTop} , and may your code be ever <b>bug-free</b> (or at least easy to debug)!`
 
