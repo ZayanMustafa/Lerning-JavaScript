@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+}
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    height: 250px;
+    width: 250px;
+
+}
+.Showing_bar{
+    height: 200px;
+    width: 200px;
+}
+.Chossing_bar{
+    height: 350px;
+    width: 350px;
+}

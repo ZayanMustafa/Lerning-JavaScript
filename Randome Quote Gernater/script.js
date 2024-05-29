@@ -1,6 +1,5 @@
 var quote = [
-    
-    " The only way to do great work is to love what you do.- Steve Jobs",
+     " The only way to do great work is to love what you do.- Steve Jobs",
     " Life is what happens when you're busy making other plan- John Lennon",
     " Get busy living or get busy dying.  - Stephen King",
     " You have within you right now, everything you need to deal with whatever the world can throw at you.  - Brian Tracy",
@@ -98,15 +97,18 @@ var quote = [
     "Patience is the companion of wisdom." - "Saint Augustine",
     "Wisdom begins in wonder." - "Socrates"]
     console.log(quote)
-     
+
+    var retry = document.getElementById("hasan")
+
     var display = document.getElementById("button");
     display.addEventListener('click', function() {
-        this.style.backgroundColor = "white";
-        this.style.color = "black";
-        this.style.fontSize = "95px";
+        retry.value= "Retry"
+        // this.style.backgroundColor = "white";
+        // this.style.color = "black";
+        // this.style.fontSize = "95px";
         var hasan = quote[Math.floor(Math.random() * quote.length)];
-        console.log(hasan)
         display.innerText = hasan;
-        // clearAll();  
+        console.log(hasan)
     })
- 
+    
+    
