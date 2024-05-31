@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Picker</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="main">
-        <div class="show"></div>
+<body onmouseover="forbody()">
+    <div class="container">
+        <div class="mainBox">
+            <h3>Color Showing Box</h3>
+            <div class="show" id="show"></div>
+            <h3>Pick the Color</h3>
+            <div class="pickerbox">
+                <div id="box1" onmousemove="first()" class="picker1 box" style="background-color: #C0D8C8;"></div>
+                <div id="box2" onmousemove="second()" class="picker2 box" style="background-color:  #446472;"></div>
+                <div id="box3" onmousemove="third()" class="picker3 box" style="background-color: #FFE69E;"></div>
+                <div id="box4" onmousemove="fourth()" class="picker4 box" style="background-color:   #FFD8A2;"></div>
+                <div id="box5" onmousemove="fifht()" class="picker5 box" style="background-color:   #FFB9A4;"></div>
+            </div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
