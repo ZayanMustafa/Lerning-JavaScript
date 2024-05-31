@@ -54,7 +54,6 @@ h3 {
 }
 
 /* Media Queries */
-
 /* For laptops and desktops */
 @media only screen and (max-width: 1199px) {
     .mainBox {
@@ -99,14 +98,4 @@ h3 {
     }
 }
 
-/* .show{
-    height: 400px;
-    width: 400px;
-    background-color: aqua !important;
-    margin-top: 2px !important;    
-}
-.boxes{
-   height: 200px;
-   width:200px;
-   background-color : red;
-} */
+
