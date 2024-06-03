@@ -94,22 +94,18 @@ body {
 }
 
 @media (max-width: 768px) {
-  body{
-background-color: #2C3539;
-}
+ 
   .clock {
     font-size: 3rem;
   }
 
   .label {
     font-size: 0.6em;
+    background-color: #2C3539;
   }
 }
 
 @media (max-width: 576px) {
- body{
-background-color: #1A2421;
-}
 
   .clock {
     font-size: 2rem;
@@ -117,6 +113,7 @@ background-color: #1A2421;
 
   .label {
     font-size: 0.7em;
+    background-color: #1A2421;
   }
 }
 ```
