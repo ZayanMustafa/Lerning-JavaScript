@@ -98,7 +98,7 @@ var quote = [
     "Wisdom begins in wonder." - "Socrates"]
     console.log(quote)
 
-    var retry = document.getElementById("hasan")
+    
 
     var display = document.getElementById("button");
     display.addEventListener('click', function() {
