@@ -100,7 +100,7 @@ var quote = [
 
     var display = document.getElementById("button");
     display.addEventListener('click', function() {
-        // retry.value= "Retry"
+           retry.value= "Retry"
         // this.style.backgroundColor = "white";
         // this.style.color = "black";
         // this.style.fontSize = "95px";
