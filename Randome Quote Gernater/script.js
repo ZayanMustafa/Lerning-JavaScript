@@ -95,7 +95,7 @@ var quote = [
     "It is not the man who has too little, but the man who craves more, that is poor." - "Seneca",
     "Do not seek to follow in the footsteps of the wise; seek what they sought." - "Matsuo Basho",
     "Patience is the companion of wisdom." - "Saint Augustine",
-    "Wisdom begins in wonder." - "Socrates"]
+    "Wisdom begins in wonder." - "Socrates
     console.log(quote)
 
     var display = document.getElementById("button");
