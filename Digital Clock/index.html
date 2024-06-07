@@ -12,25 +12,33 @@
 </head>
 <!-- <h1>Digital Clock</h1> -->
 <body>
-  <div class="container ">
-    <div class="row mt-5 bg-warning">
-      <div class="column col-12">
+  <div class="container">
+    <div class="row d-flex ">
+      <!-- Hours  -->
+      <div class="col bg-warning">
         <span class="hours" id="hours"></span>
         <span class="text">Hours</span>
       </div>
-      <div class="column col-12">
+      <!-- colone -->
+      <div class="col bg-primary">
         <span class="colon" id="colon">:</span>
+      </div>
+      <!-- Minutes  -->
+      <div class="col bg-warning">
         <span class="minutes" id="minutes"></span>
         <span class="text">Minutes</span>
       </div>
-      <div class="column col-12">
-        <span class="colon" id="colon1"></span>
+      <!-- Colone  -->
+      <div class="col bg-primary">
+        <span class="colon" id="colon">:</span>
+      </div>
+      <!-- Seconds  -->
+      <div class="col bg-warning">
         <span class="seconds" id="seconds"></span>
         <span class="text">Seconds</span>
+      </div>
     </div>
   </div>
-</div>
-  <!-- Custome JavaScript File Link -->
   <script src="script.js"></script>
 </body>
 </html>

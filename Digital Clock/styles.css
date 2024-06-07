@@ -36,17 +36,25 @@ h1{
   margin: 10px auto ;
 } */
 
-.row{
+/* .row{
   width: 900px;
-}
+} */
 /*.column{
   width: 90px !important;
 } */
-.column{
+/* .column{
   width: 120px !important;
   background-color: rgb(2, 131, 131) !important;
   color: rgb(255, 255, 255);
 }
 .text{
   font-size: 3px !important;
+} */
+/* 
+.column{
+ margin-right: 0px !important;
+} */
+.col{
+  height: 45px !important;
+  width: 75px !important;
 }

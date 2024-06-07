@@ -70,7 +70,7 @@ setInterval(function(){
     hours.innerText = currentDate.getHours();
     minutes.innerText = currentDate.getMinutes();
     seconds.innerText = currentDate.getSeconds();
-   colon.innerText= ":" 
-   colon1.innerText= ":" 
+//    colon.innerText= ":" 
+//    colon1.innerText= ":" 
 
 }, 1000);

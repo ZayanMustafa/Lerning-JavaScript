@@ -65,11 +65,9 @@
 // document.getElementById("reset").addEventListener("click", reset);
 
 
-
-
-let timer;
-let isRunning = false;
-let score = {
+var timer;
+var isRunning = false;
+var score = {
     wins: 0,
     losses: 0
 };
