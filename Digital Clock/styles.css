@@ -34,7 +34,7 @@ h1{
 .text{
   font-size: 10px !important;
   margin: 10px auto ;
-} */
+} 
 
 /* .row{
   width: 900px;
@@ -43,6 +43,12 @@ h1{
   width: 90px !important;
 } */
 /* .column{
+=======
+}
+.column{
+  width: 90px !important;
+} 
+.column{
   width: 120px !important;
   background-color: rgb(2, 131, 131) !important;
   color: rgb(255, 255, 255);
@@ -57,4 +63,70 @@ h1{
 .col{
   height: 45px !important;
   width: 75px !important;
+}
+
+body {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.clock {
+  font-size: 4rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-unit span {
+  margin: 0 5px;
+}
+
+.colon {
+  margin: 0 10px;
+}
+
+.label {
+  font-size: 0.5em;
+  color: #bbb;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+ 
+  .clock {
+    font-size: 3rem;
+  }
+
+  .label {
+    font-size: 0.6em;
+    background-color: #2C3539;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .clock {
+    font-size: 2rem;
+  }
+
+  .label {
+    font-size: 0.7em;
+    background-color: #1A2421;
+  }
 }

@@ -49,6 +49,7 @@
 
 // For Day's :
 // console.log(few.getDay())
+<<<<<<< HEAD
 var hours = document.getElementById("hours")
 var minutes = document.getElementById("minutes")
 var seconds = document.getElementById("seconds")
@@ -73,4 +74,22 @@ setInterval(function(){
 //    colon.innerText= ":" 
 //    colon1.innerText= ":" 
 
-}, 1000);
+// Java script
+function updateClock() {
+  var hours = document.getElementById("hours");
+  var minutes = document.getElementById("minutes");
+  var seconds = document.getElementById("seconds");
+
+
+  var currentDate = new Date();
+  var currentHours = currentDate.getHours();
+  var currentMinutes = currentDate.getMinutes();
+  var currentSeconds = currentDate.getSeconds();
+
+  hours.innerText = String(currentHours).padStart(2, '0');
+  minutes.innerText = String(currentMinutes).padStart(2, '0');
+  seconds.innerText = String(currentSeconds).padStart(2, '0');
+}
+
+setInterval(updateClock, 1000);
+updateClock(); // Initial call to display clock immediately
