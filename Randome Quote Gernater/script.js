@@ -80,20 +80,29 @@ var quote = [
     "Wisdom is the reward you get for a lifetime of listening when you would rather have talked. - Mark Twain"
 ];
 
-var button = document.getElementById("button");
-var hasan = document.getElementById("hasan");
-var regenerate = document.getElementById("regenerate");
 
-button.addEventListener('click', function() {
-    generateQuote();
-    regenerate.style.display = "block";
-});
+var displayButton = document.getElementById("button");
+var quoteDisplay = document.getElementById("hasan");
+var regenerateButton = document.getElementById("regenerate");
 
-regenerate.addEventListener('click', function() {
-    generateQuote();
-});
-
-function generateQuote() {
-    var randomQuote = quote[Math.floor(Math.random() * quote.length)];
-    hasan.innerText = randomQuote;
+function getRandomQuote() {
+    return quotes[Math.floor(Math.random() * quotes.length)];
 }
+
+displayButton.addEventListener('click', function() {
+    var randomQuote = getRandomQuote();
+    quoteDisplay.innerText = randomQuote;
+    displayButton.style.display = "none";
+    regenerateButton.style.display = "inline-block";
+    quoteDisplay.classList.remove('animate__fadeIn');
+    void quoteDisplay.offsetWidth; // Restart animation
+    quoteDisplay.classList.add('animate__fadeIn');
+});
+
+regenerateButton.addEventListener('click', function() {
+    var randomQuote = getRandomQuote();
+    quoteDisplay.innerText = randomQuote;
+    quoteDisplay.classList.remove('animate__fadeIn');
+    void quoteDisplay.offsetWidth; // Restart animation
+    quoteDisplay.classList.add('animate__fadeIn');
+});
