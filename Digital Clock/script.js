@@ -49,47 +49,32 @@
 
 // For Day's :
 // console.log(few.getDay())
-<<<<<<< HEAD
-var hours = document.getElementById("hours")
-var minutes = document.getElementById("minutes")
-var seconds = document.getElementById("seconds")
-var colon = document.getElementById("colon")
-var colon1 = document.getElementById("colon1")
-// for adding
-setInterval(function(){
-    if  (hours <= 10){
-    hours = 0 + hours;
-    }
-    if  (minutes <= 10) {
-        minutes =   0  + minutes;
-    }
-    if (seconds >= 9 ){
-        seconds = 0 + seconds
-    }
-    var currentDate = new Date();
-    var currentHour = currentDate.getHours();
-    hours.innerText = currentDate.getHours();
-    minutes.innerText = currentDate.getMinutes();
-    seconds.innerText = currentDate.getSeconds();
-//    colon.innerText= ":" 
-//    colon1.innerText= ":" 
-
-// Java script
 function updateClock() {
-  var hours = document.getElementById("hours");
-  var minutes = document.getElementById("minutes");
-  var seconds = document.getElementById("seconds");
-
-
-  var currentDate = new Date();
-  var currentHours = currentDate.getHours();
-  var currentMinutes = currentDate.getMinutes();
-  var currentSeconds = currentDate.getSeconds();
-
-  hours.innerText = String(currentHours).padStart(2, '0');
-  minutes.innerText = String(currentMinutes).padStart(2, '0');
-  seconds.innerText = String(currentSeconds).padStart(2, '0');
-}
-
-setInterval(updateClock, 1000);
-updateClock(); // Initial call to display clock immediately
+    var hours = document.getElementById("hours");
+    var minutes = document.getElementById("minutes");
+    var seconds = document.getElementById("seconds");
+  
+    var currentDate = new Date();
+    var currentHours = currentDate.getHours();
+    var currentMinutes = currentDate.getMinutes();
+    var currentSeconds = currentDate.getSeconds();
+  
+    // Ensure the time is always two digits
+    if (currentHours < 10) {
+      currentHours = "0" + currentHours;
+    }
+    if (currentMinutes < 10) {
+      currentMinutes = "0" + currentMinutes;
+    }
+    if (currentSeconds < 10) {
+      currentSeconds = "0" + currentSeconds;
+    }
+  
+    hours.innerText = currentHours;
+    minutes.innerText = currentMinutes;
+    seconds.innerText = currentSeconds;
+  }
+  
+  setInterval(updateClock, 1000);
+  updateClock();
+  

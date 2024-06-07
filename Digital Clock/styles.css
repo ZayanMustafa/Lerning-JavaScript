@@ -1,70 +1,4 @@
-/* body {
-  font-family: Arial, sans-serif;
-  background-color: #ddcc6b;
-}
-.heading{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 100px auto;
-  padding: 10px;
-  width: 900px; 
-  border-radius: 20px;
-  color: black
-}
-h1{
-  font-family: Georgia, 'Times New Roman';
-  margin-left: 150px;
-  padding-top: 10px;
-
-}
-.container{
-  background-color: rgb(255, 209, 6);
-  padding-left: 0px auto;
-  width: 600px;
-  margin: 300px 350px auto;
-  margin-right: 120px;
-  font-family: Georgia, sans-serif;
-}
-.row{
-  height: 100px ;
-  font-size: 65px;
-  color: #ffffff;
-}
-.text{
-  font-size: 10px !important;
-  margin: 10px auto ;
-} 
-
-/* .row{
-  width: 900px;
-} */
-/*.column{
-  width: 90px !important;
-} */
-/* .column{
-=======
-}
-.column{
-  width: 90px !important;
-} 
-.column{
-  width: 120px !important;
-  background-color: rgb(2, 131, 131) !important;
-  color: rgb(255, 255, 255);
-}
-.text{
-  font-size: 3px !important;
-} */
-/* 
-.column{
- margin-right: 0px !important;
-} */
-.col{
-  height: 45px !important;
-  width: 75px !important;
-}
-
+/* Default styles */
 body {
   background-color: #f8f9fa;
   display: flex;
@@ -77,8 +11,10 @@ body {
 
 .clock {
   font-size: 4rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #a200ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  padding: 20px;
 }
 
 .time {
@@ -93,40 +29,94 @@ body {
   align-items: center;
 }
 
-.time-unit span {
-  margin: 0 5px;
-}
-
-.colon {
-  margin: 0 10px;
+.time-unit .number {
+  font-size: 4rem; 
 }
 
 .label {
-  font-size: 0.5em;
+  font-size: .5rem; 
   color: #bbb;
   margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+.colon {
+  font-size: 4rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
  
+
+}
+
+/* Media queries */
+@media only screen and (max-width: 1200px) {
+  /* Large screens */
   .clock {
+    font-size: 3rem;
+    background-color: #003cff;
+
+  }
+
+  .time-unit .number {
     font-size: 3rem;
   }
 
   .label {
-    font-size: 0.6em;
-    background-color: #2C3539;
+    font-size: .3rem;
+  }
+
+  .colon {
+    font-size: 3rem;
+   
+
   }
 }
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 992px) {
+  /* Normal computers */
+  /* Adjust styles if needed */
+}
 
+@media only screen and (max-width: 768px) {
+  /* Tablets and large-screen mobile */
   .clock {
-    font-size: 2rem;
+    font-size: 4.5rem !important;
+    background-color: #272525;  
+  }
+
+  .time-unit .number {
+    font-size: 2.5rem;
   }
 
   .label {
-    font-size: 0.7em;
-    background-color: #1A2421;
+    font-size: .2rem;
+  }
+
+  .colon {
+    font-size: 2.5rem;
+   
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* Small-screen mobile */
+  .clock {
+    font-size: 2rem;
+    background-color: #ff0000;
+    }
+    
+    .time-unit .number {
+      font-size: 2rem;
+  }
+
+  .label {
+    font-size: 0.8rem;
+  }
+  .label {
+    font-size: .1rem;
+  }
+  .colon {
+    font-size: 2rem;
+   
   }
 }
