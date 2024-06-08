@@ -1,0 +1,19 @@
+.left, .right {
+    width: 20% !important;
+    overflow: hidden;
+    display: block; /* Display initially */
+  }
+  
+  .enter {
+    background-color: #3b2402;
+    display: inline-block;
+    align-items: flex-end;
+    color: #ffffff !important;
+  }
+  
+ @media (max-width: 767px) {
+    .left, .right {
+      display: none; 
+    }
+  }
+  
