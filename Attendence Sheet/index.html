@@ -12,40 +12,66 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-<!-- Nav Bar -->
-<nav class="navbar bg-body-secondary border-bottom border-body" data-bs-theme="dark">
-  <h3 class="ms-5 text-white">Student Portal</h3>
-</nav>
-<!-- Body -->
+  <!-- Login Sheet  -->
+  <div class="container">
+    <div class="image-section">
+        <img src="https://png.pngtree.com/png-vector/20230423/ourmid/pngtree-teacher-login-blue-gradient-concept-icon-flat-art-round-vector-png-image_51465856.jpg" alt="Image">
+    </div>
+    <div class="login-section">
+        <h2>Teacher Login</h2>
+        <form action="submit_login" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button onclick="login()" type="submit">Login</button>
+        </form>
+    </div>
+</div>
+  <!-- After Login Sheet  -->
+  <div class="Sheet" id="Attendance" style="display: none;">
+   <!-- Nav Bar -->
+ <nav class="navbar bg-body-secondary border-bottom border-body" data-bs-theme="dark">
+     <h3 class="ms-5 text-white">Student Portal</h3>
+    </nav>
+  <!-- Body -->
 <div class="text-center">
   <div class="row">
     <div class="col-2 left bg-primary">
       <h3>Class Info.</h3>
     </div>
-    <!-- For adding more student -->
-    <div class="col center">
-      <!-- Attendance Sheet -->
-      <table class="table table-bordered table-striped">
-        <thead class="thead-dark">
-          <tr>
-            <th>Serial Number</th>
-            <th>Name</th>
-            <th>Father Name</th>
-            <th>Class</th>
-            <th>Section</th>
-          </tr>
+  <!-- For adding more student -->
+<div class="col center">
+  <!-- Attendance Sheet -->
+<table class="table table-bordered table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>Serial Number</th>
+    <th>Name</th>
+  <th>Father Name</th>
+<th>Class</th>
+<th>Section</th>
+</tr>
         </thead>
-        <tbody id="student-table-body">
-          <!-- Student data will be added here -->
-        </tbody>
-      </table>
-    </div>
-    <!-- Teacher Login -->
-    <div class="col-2 right bg-info">
-      <h1 class="text-start mt-5">Welcome</h1>
-      <div onclick="addmore()" class="enter navbar-brand fs-2">Add More Student +</div>
-      <!-- Form -->
-      <form id="student-form" style="display: none;">
+      <tbody id="student-table-body">
+        <!-- Student data will be added here -->
+      </tbody>
+    </table>
+  </div>
+<!-- Teacher Login -->
+<div class="col-2 right bg-info">
+  <h1 class="text-start mt-5">Welcome</h1>
+<div onclick="addmore()" class="enter navbar-brand fs-2">Add More Student +</div>
+<!-- Form -->
+<form id="student-form" style="display: none;">
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
           <input type="text" class="form-control" id="name" name="name">
@@ -59,10 +85,7 @@
     </div>
   </div>
 </div>
-<!-- Toggle Button for Left Column -->
-<!-- <div class="toggle-button">
-  <button onclick="toggleLeftColumn()" class="btn btn-primary">Toggle Class Info</button>
-</div> -->
+</div>
 
 <!-- Custom JS link -->
 <script src="script.js"></script>

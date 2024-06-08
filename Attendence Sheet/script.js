@@ -1,3 +1,10 @@
+
+function login() {
+  alert("Sabar Kar Bhai");
+  var page = document.getElementById("Attendance")
+  page.style.display = 'block';
+}
+
   // Initial student data
   var studentNames = [
     { name: "Muhammad", fatherName: "Abdullah" },
