@@ -43,12 +43,15 @@
   <div class="classSheet" id="classSheet">
    <!-- Nav Bar -->
   <nav class="navbar bg-body-secondary border-bottom border-body" data-bs-theme="dark">
-     <h3 class="ms-5 text-white">Student Portal</h3>
+     <h3 class="ms-5">Student Portal</h3>
     </nav>
   <!-- Body -->
 <div class="text-center">
+ 
+ 
   <div class="row">
-    <div class="col-2 left text-start ms-2 border-end mt-3">
+    <!-- Left Column -->
+    <div class="col-2 left text-start ms-2 border-end mt-3 d-none d-md-block">
     <span><h5>🏫 Class Overview</h5></span><hr>
     <span><h5>📢 Class Announcements</h5></span><hr>
     <span><h5>⏰ Class Schedule</h5></span><hr>
@@ -66,27 +69,69 @@
     <span><h5>🆘 Help/Support</h5></span><hr>
     <span><h5>🛠️ Student Support Services</h5></span><hr>
     </div>
-<div class="col center">
-  <h2 class="animate__animated animate__zoomInDown text-dark mt-4" >👋 Welcome back, Teacher! 📚 It's great to see you again!</h2>
-  <!-- Attendance Sheet -->
-  <table class="table table-bordered table-striped">
-    <thead class="thead-dark">
-      <tr>
-        <th>Serial Number</th>
-        <th>Name</th>
-        <th>Father Name</th>
-      </tr>
-    </thead>
-    <tbody id="student-table-body">
+  
+
+    
+    <!-- Center Column  -->
+    <div class="col center text-dark">
+      <h2 class="animate__animated animate__zoomInDown text-dark mt-4">👋 Welcome back, Teacher! 📚 It's great to see you again!</h2>
+      <!-- Summary Of Class -->
+      <div class="text-end d-flex">
+        <h1 class="mt-4 text-dark align-item-start">Total Students : <span class="text-dark" id="Total"></span></h1>
+        <h2 class="mt-4 text-dark align-item-end mt-4 ms-auto">Class: <span class="text-dark">10 </span></h2>
+        <h2 class="mt-4 text-dark align-item-end mt-4 ms-3 ">Section: <span class="text-dark">A </span></h2>
+      </div>
+      <!-- Attendance Sheet -->
+      <table class="table table-bordered table-striped mt-5">
+        <thead class="thead-dark">
+          <tr>
+            <th>Serial Number</th>
+            <th>Name</th>
+            <th>Father Name</th>
+            <th>Attendance</th>
+          </tr>
+        </thead>
+        <tbody id="student-table-body">
+          <!-- Student data will be added here -->
+        </tbody>
+      </table>
+      </div>
       
-      <!-- Student data will be added here -->
-    </tbody>
-  </table>
-  </div>
-<!-- Teacher Login -->
-<div class="col-2 right border-start mt-2">
-  <img class="teacher" src="https://ideogram.ai/assets/image/balanced/response/tt2JiRoETzubMeVs1vHdOw" alt="Image of Teacher">
-  <h5 id="showEmail"></h5>
+      <!-- Modal for adding new student -->
+      
+      
+      
+      <!-- Right Column -->
+      <div class="col-2 right border-start mt-2 d-none d-md-block">
+        <img class="teacher" src="https://ideogram.ai/assets/image/balanced/response/tt2JiRoETzubMeVs1vHdOw" alt="Image of Teacher">
+        <h5 id="showEmail"></h5>
+
+      <!-- Add More Student button -->
+        <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#addStudentModal">Add More Student +</button>
+        <div class="modal fade" id="addStudentModal" tabindex="-1" aria-labelledby="addStudentModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="addStudentModalLabel">Add Student</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="addStudentForm">
+                  <div class="mb-3">
+                    <label for="studentName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="studentName" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="fatherName" class="form-label">Father Name</label>
+                    <input type="text" class="form-control" id="fatherName" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Add Student</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+  
 </div>
 </div>
 </div>

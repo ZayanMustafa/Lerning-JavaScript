@@ -11,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background: #000;
   color: #999;
+  height: fit-content;
 }
 
 ul {
@@ -194,8 +195,8 @@ input[type="password"] {
   overflow-x: hidden !important;
 }
 hr{
-  margin-left: 20px !important;
-  width: 200px ;
+  margin-left: 10% !important;
+  width: 80% ;
 }
 span{
   overflow: overlay;
@@ -205,3 +206,5 @@ span{
   height: 250px;
   margin-top: 15px;
 }
+
+/* for Timming  */
