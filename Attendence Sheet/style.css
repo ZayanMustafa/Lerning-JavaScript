@@ -191,4 +191,5 @@ input[type="password"] {
   /* After Login Page  */
 .classSheet{
   display: none;
+  overflow-x: hidden !important;
 }
