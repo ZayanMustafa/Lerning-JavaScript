@@ -1,5 +1,4 @@
-  /* Login Page Styling  */
-  
+/* Global Styling */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,16 +33,16 @@ p {
   margin: 0.5rem 0;
 }
 
+/* Login Page Styling */
+/* Showcase */
 .showcase {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("https://ideogram.ai/assets/image/balanced/response/u1JcvoCxT3SANSODNTKDmg")
-    no-repeat center center/cover;
+  background: url("https://ideogram.ai/assets/image/balanced/response/u1JcvoCxT3SANSODNTKDmg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
 }
 
 .showcase::after {
@@ -74,6 +73,7 @@ p {
   border-radius: 16px;
 }
 
+/* Form Styling */
 .formm h1 {
   margin-bottom: 20px;
 }
@@ -117,7 +117,6 @@ p {
   cursor: pointer;
   outline: none;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.55);
-  /* margin-bottom: 25px !important; */
 }
 
 .help {
@@ -134,25 +133,20 @@ p {
   text-decoration: underline;
 }
 
-/*  input */
-
+/* Input Styling */
 input[type="checkbox"] {
   border-radius: 2px;
   margin-right: 12px;
   margin-bottom: 2px !important;
-  color: white
+  color: white;
 }
 
-input[type="email"] {
-  background: #343434;
-}
-
+input[type="email"],
 input[type="password"] {
   background: #343434;
 }
 
-/*  input end */
-
+/* Signup Styling */
 .signup {
   width: 100%;
   display: flex;
@@ -178,33 +172,39 @@ input[type="password"] {
   text-decoration: underline;
 }
 
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 5px;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #496989;
   border-radius: 10px;
   border: 1px solid #496989;
 }
+
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
-  /* After Login Page  */
-.classSheet{
+
+/* After Login Page Styling */
+.classSheet {
   display: none;
   overflow-x: hidden !important;
 }
-hr{
+
+hr {
   margin-left: 10% !important;
-  width: 80% ;
+  width: 80%;
 }
-span{
+
+span {
   overflow: overlay;
 }
-.teacher{
+
+.teacher {
   border-radius: 50%;
   height: 250px;
   margin-top: 15px;
 }
 
-/* for Timming  */
