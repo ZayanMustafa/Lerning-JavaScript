@@ -1,6 +1,12 @@
 var loginPage = document.getElementById("showcase");
 var classSheet = document.getElementById("classSheet");
 
+function login() {
+  alert("Sabar Kar Bhai");
+  var page = document.getElementById("Attendance"). value
+  console. log ("page") 
+  page.style.display = 'block';
+}
 
   function signIn(event) {
       event.preventDefault(); // Prevent form submission and page reload
