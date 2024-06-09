@@ -193,3 +193,15 @@ input[type="password"] {
   display: none;
   overflow-x: hidden !important;
 }
+hr{
+  margin-left: 20px !important;
+  width: 200px ;
+}
+span{
+  overflow: overlay;
+}
+.teacher{
+  border-radius: 50%;
+  height: 250px;
+  margin-top: 15px;
+}
