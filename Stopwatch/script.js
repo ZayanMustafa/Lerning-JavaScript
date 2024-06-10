@@ -1,64 +1,50 @@
-var timer;
-var isRunning = false;
-var milliseconds = 0;
-var seconds = 0;
-var minutes = 0;
-var hours = 0;
+let timer;
+let running = false;
+let hours = 0;
+let minutes = 0;
+let seconds = 0;
 
-function startStop() {
-    if (isRunning) {
-        clearInterval(timer);
-        isRunning = false;
-        document.getElementById("startStop").textContent = "Start";
-    } else {
-        timer = setInterval(updateDisplay, 10); // Update every 10 milliseconds
-        isRunning = true;
-        document.getElementById("startStop").textContent = "Stop";
-    }
-}
-
-function reset() {
-    clearInterval(timer);
-    isRunning = false;
-    milliseconds = 0;
-    seconds = 0;
-    minutes = 0;
-    hours = 0;
-    updateDisplay();
-    document.getElementById("startStop").textContent = "Start";
-}
+const display = document.getElementById('display');
+const startStopBtn = document.getElementById('startStopBtn');
+const resetBtn = document.getElementById('resetBtn');
 
 function updateDisplay() {
-    milliseconds++;
-    if (milliseconds === 100) {
-        milliseconds = 0;
-        seconds++;
-        if (seconds === 60) {
-            seconds = 0;
-            minutes++;
-            if (minutes === 60) {
-                minutes = 0;
-                hours++;
-            }
+    display.textContent = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
+
+function incrementTime() {
+    seconds++;
+    if (seconds === 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes === 60) {
+            minutes = 0;
+            hours++;
         }
     }
-    const display = document.getElementById("display");
-    display.textContent = pad(hours) + ":" + pad(minutes) + ":" + pad(seconds) + "." + padMilliseconds(milliseconds);
+    updateDisplay();
 }
 
-function pad(value) {
-    return value < 10 ? "0" + value : value;
-}
-
-function padMilliseconds(value) {
-    if (value < 10) {
-        return "00" + value;
-    } else if (value < 100) {
-        return "0" + value;
+startStopBtn.addEventListener('click', () => {
+    if (!running) {
+        timer = setInterval(incrementTime, 1000);
+        startStopBtn.textContent = 'Stop';
+        startStopBtn.classList.add('running');
     } else {
-        return value;
+        clearInterval(timer);
+        startStopBtn.textContent = 'Start';
+        startStopBtn.classList.remove('running');
     }
-}
+    running = !running;
+});
 
-document.getElementById("startStop").addEventListener("click", startStop);
-document.getElementById("reset").addEventListener("click", reset);
+resetBtn.addEventListener('click', () => {
+    clearInterval(timer);
+    running = false;
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+    updateDisplay();
+    startStopBtn.textContent = 'Start';
+    startStopBtn.classList.remove('running');
+});
