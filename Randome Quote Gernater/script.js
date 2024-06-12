@@ -27,9 +27,11 @@ var quotes = [
     "The best richness is the richness of the soul. - Prophet Muhammad",
     "Be like the flower that gives its fragrance to even the hand that crushes it. - Ali ibn Abi Talib",
     "Do not grieve, anything you lose comes round in another form. - Rumi",
+    "The highest form of wisdom is kindness. - The Talmud",
     "The heart is the sanctuary of God. - Ibn Arabi",
     "The believer does not taunt others, does not curse others, does not use profanity, and does not abuse others. - Prophet Muhammad",
     "A person is either your brother in faith or your equal in humanity. - Ali ibn Abi Talib",
+    "Silence is the fence around wisdom. - The Talmud",
     "The strongest among you is the one who controls his anger. - Prophet Muhammad",
     "Trust in Allah, but tie your camel. - Proverb",
     "People are asleep, and when they die, they awaken. - Ali ibn Abi Talib",
@@ -71,8 +73,10 @@ var quotes = [
     "Your attitude, not your aptitude, will determine your altitude. - Zig Ziglar",
     "People may hear your words, but they feel your attitude. - John C. Maxwell",
     "Excellence is not a skill. It is an attitude. - Ralph Marston",
+    "The best among you are those who have the best manners and character. - Prophet Muhammad",
     "Knowledge without action is useless and action without knowledge is futile. - Imam al-Ghazali",
     "The only disability in life is a bad attitude. - Scott Hamilton",
+    "Study is not the main thing; doing is. - Rabbi Isaac Luria",
     "Weakness of attitude becomes weakness of character. - Albert Einstein",
     "A positive attitude causes a chain reaction of positive thoughts, events, and outcomes. - Wade Boggs",
     "Attitude is everything, so pick a good one. - Wayne Dyer",
@@ -90,6 +94,7 @@ var quotes = [
     "Success is walking from failure to failure with no loss of enthusiasm. - Winston Churchill",
     "Happiness is not something ready-made. It comes from your own actions. - Dalai Lama",
     "The purpose of our lives is to be happy. - Dalai Lama",
+    "A man's true wealth is the good he does in this world. - Prophet Muhammad",
     "Happiness depends upon ourselves. - Aristotle",
     "For every minute you are angry you lose sixty seconds of happiness. - Ralph Waldo Emerson",
     "Happiness is not a goal, it is a by-product. - Eleanor Roosevelt",
@@ -105,6 +110,7 @@ var quotes = [
     "The journey of a thousand miles begins with one step. - Lao Tzu",
     "Wisdom is not a product of schooling but of the lifelong attempt to acquire it. - Albert Einstein",
     "Knowledge speaks, but wisdom listens. - Jimi Hendrix",
+    "He who learns but does not think, is lost! He who thinks but does not learn is in great danger. - The Talmud",
     "Wisdom is the reward you get for a lifetime of listening when you would rather have talked. - Mark Twain"
 ];
 
