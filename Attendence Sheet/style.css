@@ -208,3 +208,19 @@ span {
   margin-top: 15px;
 }
 
+/* Logout  */
+.btn-logout {
+  position: relative;
+}
+
+.btn-logout i {
+  margin-right: 8px;
+}
+
+.btn-logout:hover {
+  background-color: #dc3545 !important;
+}
+
+.btn-logout:focus {
+  box-shadow: none !important;
+}

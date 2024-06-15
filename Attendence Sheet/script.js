@@ -31,6 +31,8 @@ function signIn(event) {
     }
 }
 
+
+
 var students = [
     { name: "Muhammad", fatherName: "Abdullah" },
     { name: "Aisha", fatherName: "Abu Bakr" },
@@ -94,3 +96,8 @@ document.getElementById("addStudentForm").addEventListener("submit", function(ev
 
 var totalStudent = document.getElementById("Total");
 totalStudent.innerHTML = students.length;
+
+// Logout
+function logout(){
+    localStorage.removeItem("userEmail");
+}
