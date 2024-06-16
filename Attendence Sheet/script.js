@@ -98,6 +98,13 @@ var totalStudent = document.getElementById("Total");
 totalStudent.innerHTML = students.length;
 
 // Logout
-function logout(){
-    localStorage.removeItem("userEmail");
+function logout() {
+    if (confirm("Are you sure you want to logout?")) {
+        // Remove the user email from localStorage
+        localStorage.removeItem("userEmail");
+
+        // Hide the classSheet and show the login page
+        document.getElementById("loginPage").style.display = "block";
+        document.getElementById("classSheet").style.display = "none";
+    }
 }

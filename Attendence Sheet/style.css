@@ -22,6 +22,7 @@ h2,
 h3,
 h4 {
   color: #fff !important;
+  text-align: left; /* Ensure headers are left-aligned */
 }
 
 a {
@@ -31,6 +32,7 @@ a {
 
 p {
   margin: 0.5rem 0;
+  text-align: left; /* Ensure paragraphs are left-aligned */
 }
 
 /* Login Page Styling */
@@ -60,22 +62,23 @@ p {
 .showcase-content {
   position: relative;
   z-index: 2;
-  width: 450px;
-  height: 450px;
-  background: rgb(0, 0, 0, 0.65);
+  width: 90%;
+  max-width: 450px;
+  background: rgba(0, 0, 0, 0.65);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
-  padding: 60px 60px;
+  padding: 60px 20px;
   border-radius: 16px;
 }
 
 /* Form Styling */
 .formm h1 {
   margin-bottom: 20px;
+  text-align: left; /* Ensure form headers are left-aligned */
 }
 
 .formm {
@@ -97,6 +100,7 @@ p {
   padding: 10px;
   font-size: inherit;
   color: #fff;
+  background: #343434;
 }
 
 .formm .btn {
@@ -156,11 +160,13 @@ input[type="password"] {
 
 .signup p {
   margin-right: 5px;
+  text-align: left; /* Ensure signup paragraphs are left-aligned */
 }
 
 .more {
   font-size: 0.8em;
   line-height: 1.1em;
+  text-align: left; /* Ensure more text is left-aligned */
 }
 
 .more a {
@@ -208,7 +214,7 @@ span {
   margin-top: 15px;
 }
 
-/* Logout  */
+/* Logout */
 .btn-logout {
   position: relative;
 }
@@ -223,4 +229,88 @@ span {
 
 .btn-logout:focus {
   box-shadow: none !important;
+}
+
+/* Media Queries */
+/* Desktop */
+@media (min-width: 1024px) {
+  .showcase-content {
+    padding: 60px;
+  }
+
+  .formm h1 {
+    font-size: 2rem; /* Adjust font size for larger screens */
+  }
+
+  .formm .info .email {
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .help {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .showcase-content {
+    padding: 50px 30px;
+  }
+
+  .formm h1 {
+    font-size: 1.8rem;
+  }
+
+  .formm .info .email {
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .help {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .showcase-content {
+    padding: 40px 20px;
+  }
+
+  .formm h1 {
+    font-size: 1.5rem;
+  }
+
+  .formm .info .email {
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .help {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .signup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
