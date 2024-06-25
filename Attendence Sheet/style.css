@@ -1,4 +1,3 @@
-/* Global Styling */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -231,7 +230,40 @@ span {
   box-shadow: none !important;
 }
 
-/* Media Queries */
+/* Responsive Heading Styling */
+@media (min-width: 1200px) {
+  .formm h1 {
+    font-size: 3rem;
+    color: #ff0000; /* Red color for big screens */
+    font-family: "Georgia", serif; /* Georgia font family for big screens */
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .formm h1 {
+    font-size: 2.5rem;
+    color: #00ff00; /* Green color for laptops */
+    font-family: "Verdana", sans-serif; /* Verdana font family for laptops */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .formm h1 {
+    font-size: 2rem;
+    color: #0000ff; /* Blue color for tablets */
+    font-family: "Courier New", monospace; /* Courier New font family for tablets */
+  }
+}
+
+@media (max-width: 767px) {
+  .formm h1 {
+    font-size: 1.5rem;
+    color: #ffff00; /* Yellow color for mobile devices */
+    font-family: "Comic Sans MS", cursive; /* Comic Sans MS font family for mobile devices */
+  }
+}
+
+/* General Media Queries */
 /* Desktop */
 @media (min-width: 1024px) {
   .showcase-content {
