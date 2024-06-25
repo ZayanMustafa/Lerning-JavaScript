@@ -31,8 +31,6 @@ function signIn(event) {
     }
 }
 
-
-
 var students = [
     { name: "Muhammad", fatherName: "Abdullah" },
     { name: "Aisha", fatherName: "Abu Bakr" },
@@ -91,7 +89,8 @@ document.getElementById("addStudentForm").addEventListener("submit", function(ev
     totalStudent.innerHTML = students.length;
 
     document.getElementById("addStudentForm").reset();
-    $('#addStudentModal').modal('hide');
+    // Ensure jQuery and Bootstrap JS are included in your HTML file
+    $('#addStudentModal').modal('hide'); // or use vanilla JS: document.getElementById('addStudentModal').style.display = 'none';
 });
 
 var totalStudent = document.getElementById("Total");
@@ -104,7 +103,7 @@ function logout() {
         localStorage.removeItem("userEmail");
 
         // Hide the classSheet and show the login page
-        document.getElementById("loginPage").style.display = "block";
-        document.getElementById("classSheet").style.display = "none";
+        loginPage.style.display = "block"; // Correct ID used here
+        classSheet.style.display = "none";
     }
 }
