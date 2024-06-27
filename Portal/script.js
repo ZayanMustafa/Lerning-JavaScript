@@ -7,7 +7,8 @@ function signIn(){
     alert("you are sign in....!")
     attendance.style.display = "block"
 
-}
+    
+}   
 const users = [
     { no: 1, name: 'Ahmed Khan', fatherName: 'Mohammad Ali Khan', rollNumber: '101' },
     { no: 2, name: 'Ayesha Siddiqui', fatherName: 'Omar Siddiqui', rollNumber: '102' },
