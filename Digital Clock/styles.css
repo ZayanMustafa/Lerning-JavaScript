@@ -83,7 +83,6 @@ body {
 @media only screen and (max-width: 768px) {
   /* Tablets and large-screen mobile */
   .clock {
-    /* font-size: 4.5rem !important; */
     background-color: #272525;  
   }
   .time-unit .number {
@@ -91,12 +90,11 @@ body {
   }
 
   .label {
-    font-size: .8rem;
+    font-size: 1rem; /* Increased font size for better visibility */
   }
 
   .colon {
     font-size: 2.5rem;
-   
   }
 }
 
@@ -105,17 +103,17 @@ body {
   .clock {
     font-size: 2rem;
     background-color: #ff0000;
-    }
+  }
     
-    .time-unit .number {
-      font-size: 2rem;
+  .time-unit .number {
+    font-size: 2rem;
   }
   
   .label {
-    font-size: .1rem;
+    font-size: 0.8rem; /* Increased font size for better visibility */
   }
+
   .colon {
     font-size: 2rem;
-   
   }
 }
