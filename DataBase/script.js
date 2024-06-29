@@ -1,9 +1,9 @@
+// Import necessary functions from Firebase SDK
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-import { getAuth, onAuthStateChanged } 
-from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-// Your web app's Firebase configuration
+// Firebase configuration object containing API key and other info
 const firebaseConfig = {
     apiKey: "AIzaSyCEqH-ZNy_boWxxzc7P6siB2GS6N3g9QFg",
     authDomain: "zayyanfbs.firebaseapp.com",
@@ -14,15 +14,18 @@ const firebaseConfig = {
     measurementId: "G-S44H6Z2XS2"
 };
 
-// Initialize Firebase
+// Initialize Firebase app with the configuration
 const app = initializeApp(firebaseConfig);
+
+// Initialize Firebase Analytics and Authentication
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
 
+// Log to verify Firebase initialization
 console.log("Checking===> ", app);
 console.log("auth===> ", auth);
 
-// Taking Elements From HTML
+// Get HTML elements by their IDs
 const optionBox = document.getElementById("optionBox");
 const signInBox = document.getElementById("signInBox");
 const createNewAccountBox = document.getElementById("createNewAccountBox");
@@ -35,6 +38,7 @@ const newUserEmail = document.getElementById("newUserEmail");
 const createNewAccount = document.getElementById("createNewAccount");
 
 document.addEventListener("DOMContentLoaded", () => {
+
     signInBtn.addEventListener("click", () => {
         optionBox.style.display = "none";
         signInBox.style.display = "flex";
