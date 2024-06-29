@@ -31,13 +31,26 @@
   const auth = getAuth(app);
   console.log("auth===> ",auth)
 
-
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-        console.log("User LogIn")
-       const uid = user.uid;
-    } else {
-        console.log("User Logout")
-    }
-  });
+//  Taking Elements From HTML
+  const optionBox = document.getElementById("optionBox")
+  const signInBox = document.getElementById("signInBox")
+  const createNewAccountBox = document.getElementById("createNewAccountBox")
+  const signInBtn = document.getElementById("signInBtn")
+  const createNewAccountBtn = document.getElementById("createNewAccountBtn")
+  const userEmail = document.getElementById("userEmail")
+  const signIn = document.getElementById("signIn")
+  const newUserName = document.getElementById("newUserName")
+  const newUserEmail = document.getElementById("newUserEmail")
+  const createNewAccount = document.getElementById("createNewAccount")
   
+  document.addEventListener("DOMContentLoaded", () => {
+    signInBtn.addEventListener("click", () => {
+        optionBox.style.display = "none";
+        signInBox.style.display = "block";
+    });
+
+    createNewAccountBtn.addEventListener("click", () => {
+        optionBox.style.display = "none";
+        createNewAccountBox.style.display = "block";
+    });
+});

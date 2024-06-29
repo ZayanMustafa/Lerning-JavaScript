@@ -12,28 +12,58 @@
 </head> 
 <body>
     <!-- Option Container  -->
-   <div class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;" >
+   <div class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;" id="optionBox" >
     <div class="container">
         <div class="card p-4">
             <h4 class="text-center mb-4">
                 <span class="emoji">😊</span> Hello there! <span class="emoji">🎉</span>
             </h4>
             <div class="text-center">
-                <button class="btn btn-primary btn-lg btn-block mb-3" id="SignIn">Sign In</button>
+                <button class="btn btn-primary btn-lg btn-block mb-3" id="signInBtn">Sign In</button>
                 <div class="or-divider">
                     <hr>
                     <span class="mx-2 text-muted">OR</span>
                     <hr>
                 </div>
-                <button class="btn btn-success btn-lg btn-block" id="CreateNewAccount">Create Account + </button>
+                <button class="btn btn-success btn-lg btn-block" id="createNewAccountBtn">Create Account + </button>
             </div>
         </div>
     </div>
     </div>
 
+    <!-- Sign In -->
+    <div class="bg-light d-none containerbox align-items-center justify-content-center" id="signInBox" >
+        <div class="container">
+            <div class="card p-4">
+                <h4 class="text-center mb-4">
+                    <span class="text"> Sign In hear</span>
+                </h4>
+                <div class="text-center">
+                    <input type="email" name="" id="userEmail" class="form-control mb-2" placeholder="Email">
+                    <input type="password" name="" id="userPassword" class="form-control mb-2" placeholder="Password">
+                    <button class="btn btn-primary btn-lg btn-block mb-3" id="signIn">Sign In</button>
+                </div>
+            </div>
+        </div>
+     </div>
 
-
-
+     <!-- Create New Account   -->
+     <div class="bg-light d-none containerbox align-items-center justify-content-center" id="createNewAccountBox" >
+        <div class="container">
+            <div class="card p-4">
+                <h4 class="text-center mb-4">
+                    <span class="text">Create Account</span>
+                </h4>
+                <div class="text-center">
+                    <input type="text" name="" id="newUserName" class="form-control mb-2" placeholder="Username">
+                    <input type="number" name="" id="newUserAge" class="form-control mb-2" placeholder="Age">
+                    <input type="email" name="" id="newUserEmail" class="form-control mb-2" placeholder="Email">
+                    <input type="password" name="" id="newUserPassword" class="form-control mb-2" placeholder="Password">
+                    <button class="btn btn-success btn-lg btn-block" id="createNewAccount">Create Account </button>
+                </div>
+             </div>
+        </div>
+     </div>       
     
 
 

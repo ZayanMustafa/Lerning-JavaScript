@@ -1,3 +1,9 @@
 .container{
     width: 350px !important;
 }
+#optionBox{
+    height: 100vh;
+}
+.containerbox{
+    height: 100vh;
+}
