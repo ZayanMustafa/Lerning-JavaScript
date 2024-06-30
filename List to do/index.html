@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To DO APP</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custome CSS Link -->
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- Input Bar  -->
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Write Task">
+                    <select id="priority-input" class="custom-select">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Add Task</button>
+                    </div>
+                </div>
+                
+                <!-- Find Bar  -->
+                <div class="input-group mt-3">
+                    <input type="text" class="form-control" placeholder="Find Task">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Find</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Input List Show Task  -->
+            <ul id="inputListToShowTask"></ul>
+
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
