@@ -1,0 +1,18 @@
+.list-group-item {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding-left: 2.5rem; /* Adjust left padding for dot marker */
+    position: relative; /* Position for dot marker */
+}
+
+.list-group-item::before {
+    content: "";
+    display: block;
+    width: 8px; /* Diameter of the dot */
+    height: 8px; /* Diameter of the dot */
+    background-color: #007bff; /* Color of the dot */
+    border-radius: 50%; /* Make it round */
+    position: absolute; /* Position relative to the list item */
+    left: 1rem; /* Adjust position of the dot */
+    top: calc(50% - 4px); /* Center vertically */
+}

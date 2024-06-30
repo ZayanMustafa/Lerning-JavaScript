@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To DO APP</title>
+    <title>TO DO APP</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custome CSS Link -->
@@ -15,14 +15,14 @@
             <div class="col-md-6">
                 <!-- Input Bar  -->
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Write Task">
+                    <input type="text" id="inputBar" class="form-control" placeholder="Write Task">
                     <select id="priority-input" class="custom-select">
                         <option value="low">Low</option>
                         <option value="medium">Medium</option>
                         <option value="high">High</option>
                     </select>
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">Add Task</button>
+                        <button class="btn btn-info" id="addTaskBtn" type="button">Add Task</button>
                     </div>
                 </div>
                 
@@ -30,12 +30,29 @@
                 <div class="input-group mt-3">
                     <input type="text" class="form-control" placeholder="Find Task">
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">Find</button>
+                        <button class="btn btn-success" id="findTaskbtn" type="button">Find</button>
                     </div>
                 </div>
+
+                <!-- Filter By with priority  -->
+                <div id="filter-container" class="mt-3">
+                    <!-- Filter dropdown -->
+                    <!-- <label for="filter">Filter by Priority:</label> -->
+                    <select id="filter" class="custom-select">
+                        <option value="all">All</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+
+                <div class="userInputList">
+                    <ul id="inputListToShowTask"></ul>
+                </div>
+
             </div>
             <!-- Input List Show Task  -->
-            <ul id="inputListToShowTask"></ul>
 
 
         </div>
