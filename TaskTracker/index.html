@@ -6,14 +6,14 @@
     <title>TO DO APP</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custome CSS Link -->
-    <link rel="stylesheet" href="style.css">    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <!-- Input Bar  -->
+                <!-- Input Bar -->
                 <div class="input-group">
                     <input type="text" id="inputBar" class="form-control" placeholder="Write Task">
                     <div class="input-group-append">
@@ -21,29 +21,15 @@
                     </div>
                 </div>
                 
-                <!-- Find Bar  -->
-                <div class="input-group mt-3">
-                    <input type="text" class="form-control" placeholder="Find Task">
-                    <div class="input-group-append">
-                        <button class="btn btn-success" id="findTaskbtn" type="button">Find</button>
-                    </div>
-                </div>
-
-                <div class="userInputList">
+                <!-- List to Show Tasks -->
+                <div class="userInputList mt-3">
                     <ul id="inputListToShowTask"></ul>
                 </div>
-
             </div>
-            <!-- Input List Show Task  -->
-
-
         </div>
     </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript file for functionality -->
     <script src="script.js"></script>
 </body>
 </html>
