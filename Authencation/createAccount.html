@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - Summit View School</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h2 class="text-3xl font-bold mb-6 text-center">Join Summit View School</h2>
+        <form id="signupForm" class="space-y-4">
+            <div class="flex items-center justify-center mb-6">
+                <label for="profilePic" class="relative cursor-pointer">
+                    <div class="w-32 h-32 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-user text-6xl text-gray-600"></i>
+                        <!-- Animation for upload -->
+                        <div class="animate-spin absolute inset-0 border-2 border-transparent border-top-blue-500 rounded-full"></div>
+                    </div>
+                    <input type="file" id="profilePic" name="profilePic" accept="image/*" class="hidden">
+                </label>
+            </div>
+            <div>
+                <label for="firstName" class="block text-sm font-medium text-gray-700">First Name:</label>
+                <input type="text" id="firstName" name="firstName" class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500" required>
+            </div>
+            <div>
+                <label for="lastName" class="block text-sm font-medium text-gray-700">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500" required>
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500" required>
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Password:</label>
+                <input type="password" id="password" name="password" class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500" required>
+            </div>
+            <div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Create Account</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
