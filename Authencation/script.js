@@ -33,7 +33,7 @@
 const auth = getAuth(app);
 console.log("auth==>" ,auth)
 
-
+const userCompleteName = document.getElementById("firstName", "lastName")
 const signUpEmail = document.getElementById("userEmail")
 const signUpPassword = document.getElementById("userPassword")
 const accountCreate = document.getElementById("createAccountBtn")
@@ -46,16 +46,12 @@ accountCreate.addEventListener("click", createUserAccount)
 
 
 onAuthStateChanged(auth, (user) => {
-    if (user) {
-        console.log("User is Log In")
-        // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/auth.user
-      const uid = user.uid;
-      // ...
+  if (user) {
+    console.log("User is Log In")
+    const uid = user.uid;
+    console.log(userCompleteName.value)
     } else {
         console.log("User is Not Log In")
-      // User is signed out
-      // ...
     }
   });
   
