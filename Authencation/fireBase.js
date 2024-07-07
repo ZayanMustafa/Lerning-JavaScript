@@ -52,23 +52,32 @@ onAuthStateChanged(auth, (user) => {
 
 // Function to create a user account
 function createUserAccount() {
-  console.log("UserEmail ==> ", newUserEmail.value);
-  console.log("UserPassword ==> ", signUpPassword.value);
+  const newUserEmail = document.getElementById('newUserEmail').value;
+  const signUpPassword = document.getElementById('signUpPassword').value;
+
+  console.log("UserEmail ==> ", newUserEmail);
+  console.log("UserPassword ==> ", signUpPassword);
   
-  // Correct usage: pass values instead of elements
-  createUserWithEmailAndPassword(auth, newUserEmail.value, signUpPassword.value)
+  // Create user account using Firebase Authentication
+  createUserWithEmailAndPassword(auth, newUserEmail, signUpPassword)
   .then((userCredential) => {
+    // On successful creation, you can access the user object
     console.log("User Created: ", userCredential.user);
-    // You can add further logic here for successful sign-up
+
+    // Delay the redirection by 500 milliseconds (half a second)
+    setTimeout(() => {
+      window.location.href = "signIn.html"; // Replace with your desired URL
+    }, 500);
   })
   .catch((error) => {
+    // Handle errors
     const errorCode = error.code;
     const errorMessage = error.message;
     alert(errorMessage);
     console.error("Error creating user:", error);
   });
-  alert("Ban gaya account")
 }
+
   
 
 export{ auth }
