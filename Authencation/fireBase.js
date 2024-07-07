@@ -35,7 +35,7 @@ const auth = getAuth(app);
 
 const firstNameInput = document.getElementById("firstName");
 const lastNameInput = document.getElementById("lastName");
-const signUpEmail = document.getElementById("userEmail");
+const newUserEmail = document.getElementById("userEmailNew");
 const signUpPassword = document.getElementById("userPassword");
 const accountCreate = document.getElementById("createAccountBtn");
 
@@ -54,11 +54,11 @@ onAuthStateChanged(auth, (user) => {
 
 // Function to create a user account
 function createUserAccount() {
-  console.log("UserEmail ==> ", signUpEmail.value);
+  console.log("UserEmail ==> ", newUserEmail.value);
   console.log("UserPassword ==> ", signUpPassword.value);
 
   // Correct usage: pass values instead of elements
-  createUserWithEmailAndPassword(auth, signUpEmail.value, signUpPassword.value)
+  createUserWithEmailAndPassword(auth, newUserEmail.value, signUpPassword.value)
     .then((userCredential) => {
       console.log("User Created: ", userCredential.user);
       // You can add further logic here for successful sign-up
@@ -69,4 +69,7 @@ function createUserAccount() {
       alert(errorMessage);
       console.error("Error creating user:", error);
     });
+    alert("Ban gaya account")
+    
 }
+
