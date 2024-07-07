@@ -36,12 +36,12 @@ console.log("auth==>" ,auth)
 
 const signUpEmail = document.getElementById("userEmail")
 const signUpPassword = document.getElementById("userPassword")
-const signUpBtn = document.getElementById("logInBtn")
+const accountCreate = document.getElementById("createAccountBtn")
 
 
 
 
-signUpBtn.addEventListener("click", createUserAccount)
+accountCreate.addEventListener("click", createUserAccount)
 
 
 
@@ -63,6 +63,18 @@ onAuthStateChanged(auth, (user) => {
 function createUserAccount () {
   console.log("UserEmail==>", signUpEmail.value)
   console.log("UserPassword==>", signUpPassword.value)
-  
+  createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+  .then((userCredential) => {
+    console.log("User===>" , user)
+    // Signed up 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage)
+    // ..
+  });
 
 }
