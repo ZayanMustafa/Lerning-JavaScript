@@ -30,7 +30,6 @@
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
 
-export{ auth }
 
 const firstNameInput = document.getElementById("firstName");
 const lastNameInput = document.getElementById("lastName");
@@ -55,20 +54,21 @@ onAuthStateChanged(auth, (user) => {
 function createUserAccount() {
   console.log("UserEmail ==> ", newUserEmail.value);
   console.log("UserPassword ==> ", signUpPassword.value);
-
+  
   // Correct usage: pass values instead of elements
   createUserWithEmailAndPassword(auth, newUserEmail.value, signUpPassword.value)
-    .then((userCredential) => {
-      console.log("User Created: ", userCredential.user);
-      // You can add further logic here for successful sign-up
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      alert(errorMessage);
-      console.error("Error creating user:", error);
-    });
-    alert("Ban gaya account")
-    
+  .then((userCredential) => {
+    console.log("User Created: ", userCredential.user);
+    // You can add further logic here for successful sign-up
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+    console.error("Error creating user:", error);
+  });
+  alert("Ban gaya account")
 }
+  
 
+export{ auth }
