@@ -25,55 +25,13 @@
 
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
-//  console.log("App==>" ,app)
+
  const analytics = getAnalytics(app);
-//  console.log("Analytics App" , analytics)
 
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
-// console.log("auth==>" ,auth)
-
-// const userCompleteName = document.getElementById("firstName", "lastName")
-// const signUpEmail = document.getElementById("userEmail")
-// const signUpPassword = document.getElementById("userPassword")
-// const accountCreate = document.getElementById("createAccountBtn")
 
 
-
-
-// accountCreate.addEventListener("click", createUserAccount)
-
-
-
-// onAuthStateChanged(auth, (user) => {
-//   if (user) {
-//     console.log("User is Log In")
-//     const uid = user.uid;
-//     console.log(userCompleteName.value)
-//     } else {
-//         console.log("User is Not Log In")
-//       }
-//   });
-  
-
-// function createUserAccount () {
-//   console.log("UserEmail==>", signUpEmail.value)
-//   console.log("UserPassword==>", signUpPassword.value)
-//   createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
-//   .then((userCredential) => {
-//     console.log("User===>" , user)
-//     // Signed up 
-//     const user = userCredential.user;
-//     // ...
-//   })
-//   .catch((error) => {
-//     const errorCode = error.code;
-//     const errorMessage = error.message;
-//     alert(errorMessage)
-//     // ..
-//   });
-
-// }
 
 const firstNameInput = document.getElementById("firstName");
 const lastNameInput = document.getElementById("lastName");
