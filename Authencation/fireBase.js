@@ -65,9 +65,11 @@ function createUserAccount() {
     console.log("User Created: ", userCredential.user);
 
     // Delay the redirection by 500 milliseconds (half a second)
-    setTimeout(() => {
+    // setTimeout(() => {
+    //   window.location.href = "signIn.html"; // Replace with your desired URL
+    // }, 500);
       window.location.href = "signIn.html"; // Replace with your desired URL
-    }, 500);
+      alert("ahsdkjfhkjsahdjk")
   })
   .catch((error) => {
     // Handle errors
