@@ -4,6 +4,7 @@
  import { getAuth , 
           onAuthStateChanged, 
           createUserWithEmailAndPassword , 
+          // signInWithEmailAndPassword,
          
         } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
  
@@ -29,51 +30,12 @@
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
 
-// Create Account  
-const firstNameInput = document.getElementById("firstName");
-const lastNameInput = document.getElementById("lastName");
-const newUserEmail = document.getElementById("userEmailNew");
-const signUpPassword = document.getElementById("userPassword");
-const accountCreate = document.getElementById("createAccountBtn");
-
-accountCreate.addEventListener("click", createUserAccount);
-
-// Firebase Auth State Change Listener
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    window.location.href = 'signInUserPage.html';
-    const uid = user.uid;
-  } else {
-    window.location.href = 'index.html';
-  }
-});
-
-// Create User Account  
-function createUserAccount(){
-  createUserWithEmailAndPassword(auth, newUserEmail.value, signUpPassword.value)
-  .then((userCredential) => {
-    // Signed up 
-    const user = userCredential.user;
-    console.log("User" , user)
-    window.location.href = 'signIn.html';
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ..
-  });
-}
+export { auth ,
+         onAuthStateChanged, 
+         createUserWithEmailAndPassword , };
 
 
 
-// Sign In User
-// const userSignEmail = document.getElementById("userEmail");
-// const userSignPassword = document.getElementById("userSignInPassword");
-// const signUpBtn = document.getElementById("logInBtn");
 
-// signUpBtn.addEventListener("click", signIn);
 
-// function signIn (){
-//   console.log("User Email==>" , userEmail.value)
-//   console.log("User Pasword==>" , userSignInPassword.value)
-// }
+
