@@ -36,7 +36,7 @@ onAuthStateChanged(auth, (user) => {
       window.location.href = 'signInUserPage.html';
       const uid = user.uid;
   } else {
-      // window.location.href = 'index.html';
+      window.location.href = 'index.html';
   }
 });
 
