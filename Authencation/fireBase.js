@@ -40,8 +40,51 @@ const accountCreate = document.getElementById("createAccountBtn");
 accountCreate.addEventListener("click", createUserAccount);
 
 // Firebase Auth State Change Listener
-
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // window.location.href = 'signInUserPage.html';
+    console.log("User Is hear" )
+    const uid = user.uid;
+    // ...
+  } else {
+    // window.location.href = 'index.html';
+    console.log("User Is Not hear" )
+  }
+});
 
   
-// Sign In Account 
+// Create User Account  
+function createUserAccount(){
+  // console.log("User First Name==>" , firstNameInput.value)
+  // console.log("User Last Name==>" , lastNameInput.value)
+  // console.log("User Email==>" , newUserEmail.value)
+  // console.log("User Pasword==>" , signUpPassword.value)
 
+  createUserWithEmailAndPassword(auth, newUserEmail.value, signUpPassword.value)
+  .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+    console.log("User" , user)
+    // alert("Ban Gaya Tera Account")
+    window.location.href = 'signIn.html';
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
+}
+
+console.log("user heyay boos")
+// Sign In User
+const userSignEmail = document.getElementById("userEmail");
+const userSignPassword = document.getElementById("userSignInPassword");
+const signUpBtn = document.getElementById("logInBtn");
+
+signUpBtn.addEventListener("click", signIn);
+
+function signIn (){
+  console.log("User Email==>" , userEmail.value)
+  console.log("User Pasword==>" , userSignInPassword.value)
+  // alert("hmm")
+}
