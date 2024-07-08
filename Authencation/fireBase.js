@@ -4,7 +4,7 @@
  import { getAuth , 
           onAuthStateChanged, 
           createUserWithEmailAndPassword , 
-          // signInWithEmailAndPassword,
+          signInWithEmailAndPassword,
          
         } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
  
@@ -31,8 +31,10 @@
 const auth = getAuth(app);
 
 export { auth ,
-         onAuthStateChanged, 
-         createUserWithEmailAndPassword , };
+         onAuthStateChanged , 
+         createUserWithEmailAndPassword , 
+         signInWithEmailAndPassword ,
+         };
 
 
 

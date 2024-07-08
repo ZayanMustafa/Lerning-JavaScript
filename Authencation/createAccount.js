@@ -1,6 +1,4 @@
-// signin.js
 
-// Import necessary functions from firebase.js
 import { auth, createUserWithEmailAndPassword, onAuthStateChanged } from './fireBase.js';
 
 // Elements from HTML
@@ -28,13 +26,12 @@ function createUserAccount() {
             // Signed up successfully
             const user = userCredential.user;
             console.log("User created:", user);
-            window.location.href = 'signIn.html'; // Redirect to sign-in page
+            window.location.href = 'signIn.html'; 
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
             console.error("Error creating user:", errorMessage);
-            // Handle error (e.g., display error message to user)
             alert(errorMessage);
         });
 }
