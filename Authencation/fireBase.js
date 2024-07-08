@@ -30,7 +30,7 @@
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
 
-
+// Create Account  
 const firstNameInput = document.getElementById("firstName");
 const lastNameInput = document.getElementById("lastName");
 const newUserEmail = document.getElementById("userEmailNew");
@@ -40,45 +40,8 @@ const accountCreate = document.getElementById("createAccountBtn");
 accountCreate.addEventListener("click", createUserAccount);
 
 // Firebase Auth State Change Listener
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    console.log("User is Logged In");
-    const uid = user.uid;
-    console.log(firstNameInput.value + " " + lastNameInput.value); // Concatenate first and last name
-  } else {
-    console.log("User is Not Logged In");
-  }
-});
 
-// Function to create a user account
-function createUserAccount() {
-  const newUserEmail = document.getElementById('newUserEmail').value;
-  const signUpPassword = document.getElementById('signUpPassword').value;
-
-  console.log("UserEmail ==> ", newUserEmail);
-  console.log("UserPassword ==> ", signUpPassword);
-  
-  // Create user account using Firebase Authentication
-  createUserWithEmailAndPassword(auth, newUserEmail, signUpPassword)
-  .then((userCredential) => {
-    // On successful creation, you can access the user object
-    console.log("User Created: ", userCredential.user);
-
-    // Delay the redirection by 500 milliseconds (half a second)
-    // setTimeout(() => {
-    //   window.location.href = "signIn.html"; // Replace with your desired URL
-    // }, 500);
-      // window.location.href = "signIn.html"; // Replace with your desired URL
-      alert("ahsdkjfhkjsahdjk")
-  })
-  .catch((error) => {
-    // Handle errors
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    alert(errorMessage);
-    console.error("Error creating user:", error);
-  });
-}
 
   
+// Sign In Account 
 
