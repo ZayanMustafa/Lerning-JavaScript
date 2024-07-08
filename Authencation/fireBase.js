@@ -7,12 +7,11 @@
          
         } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
  
- 
- // TODO: Add SDKs for Firebase products that you want to use
- // https://firebase.google.com/docs/web/setup#available-libraries
+        // TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
- // Your web app's Firebase configuration
- // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
  const firebaseConfig = {
    apiKey: "AIzaSyAkQtQsZ6VoJEfa86G_NaCPK-cmXdOv5Iw",
    authDomain: "firsteducationlwebsite.firebaseapp.com",
@@ -23,17 +22,12 @@
    measurementId: "G-21G3G4LZBX"
  };
 
- // Initialize Firebase
+// Initialize Firebase
  const app = initializeApp(firebaseConfig);
  const analytics = getAnalytics(app);
 
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
-
-
-
-
-// export { auth ,createUserWithEmailAndPassword, onAuthStateChanged  };
 
 // Create Account  
 const firstNameInput = document.getElementById("firstName");
@@ -47,17 +41,13 @@ accountCreate.addEventListener("click", createUserAccount);
 // Firebase Auth State Change Listener
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    // window.location.href = 'signInUserPage.html';
-    console.log("User Is hear" )
+    window.location.href = 'signInUserPage.html';
     const uid = user.uid;
-    // ...
   } else {
-    // window.location.href = 'index.html';
-    console.log("User Is Not hear" )
+    window.location.href = 'index.html';
   }
 });
 
-  
 // Create User Account  
 function createUserAccount(){
   createUserWithEmailAndPassword(auth, newUserEmail.value, signUpPassword.value)
@@ -74,17 +64,16 @@ function createUserAccount(){
   });
 }
 
-console.log("user heyay boos")
 
 
 // Sign In User
-const userSignEmail = document.getElementById("userEmail");
-const userSignPassword = document.getElementById("userSignInPassword");
-const signUpBtn = document.getElementById("logInBtn");
+// const userSignEmail = document.getElementById("userEmail");
+// const userSignPassword = document.getElementById("userSignInPassword");
+// const signUpBtn = document.getElementById("logInBtn");
 
-signUpBtn.addEventListener("click", signIn);
+// signUpBtn.addEventListener("click", signIn);
 
-function signIn (){
-  console.log("User Email==>" , userEmail.value)
-  console.log("User Pasword==>" , userSignInPassword.value)
-}
+// function signIn (){
+//   console.log("User Email==>" , userEmail.value)
+//   console.log("User Pasword==>" , userSignInPassword.value)
+// }
