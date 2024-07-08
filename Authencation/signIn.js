@@ -10,10 +10,10 @@ signUpBtn.addEventListener("click", signIn);
 // Firebase Auth State Change Listener
 onAuthStateChanged(auth, (user) => {
     if (user) {
-        window.location.href = 'signInUserPage.html';
+        // window.location.href = 'signInUserPage.html';
         const uid = user.uid;
     } else {
-        window.location.href = 'index.html';
+        // window.location.href = 'index.html';
     }
 });
 // Sign In Function 
