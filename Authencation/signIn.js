@@ -1,3 +1,4 @@
+//  Import From Fire Base
 import { auth , onAuthStateChanged, signInWithEmailAndPassword } from './fireBase.js';
 
 // Elements from HTML
