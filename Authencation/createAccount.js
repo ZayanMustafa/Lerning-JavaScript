@@ -9,8 +9,6 @@ const accountCreate = document.getElementById("createAccountBtn");
 // Event listener for create account button
 accountCreate.addEventListener("click", createUserAccount);
 
-
-
 // Function to create user account
 function createUserAccount() {
     createUserWithEmailAndPassword(newUserEmail.value, signUpPassword.value)

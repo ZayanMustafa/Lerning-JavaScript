@@ -1,22 +1,12 @@
 import { auth , onAuthStateChanged, signInWithEmailAndPassword } from './fireBase.js';
 
+// Elements from HTML
 const userSignEmail = document.getElementById("userEmail");
 const userSignPassword = document.getElementById("userSignInPassword");
 const signUpBtn = document.getElementById("logInBtn");
 
+// Event listener for Sign up button
 signUpBtn.addEventListener("click", signIn);
-
-
-// Firebase Auth State Change Listener
-// onAuthStateChanged(auth, (user) => {
-//     if (user) {
-//          window.location.href = 'signInUserPage.html';
-//         const uid = user.uid;
-//     } else {
-//       window.location.href = 'index.html';
-//     }
-// });
-
 
 // Sign In Function 
 function signIn (){
@@ -26,7 +16,6 @@ function signIn (){
     const user = userCredential.user;
     console.log("user")
     window.location.href = 'signInUserPage.html';
-    // ...
   })
   .catch((error) => {
     const errorCode = error.code;
