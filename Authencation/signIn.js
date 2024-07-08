@@ -16,6 +16,8 @@ signUpBtn.addEventListener("click", signIn);
 //       window.location.href = 'index.html';
 //     }
 // });
+
+
 // Sign In Function 
 function signIn (){
   signInWithEmailAndPassword(auth, userEmail.value, userSignInPassword.value)

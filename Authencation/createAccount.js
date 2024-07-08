@@ -9,15 +9,7 @@ const accountCreate = document.getElementById("createAccountBtn");
 // Event listener for create account button
 accountCreate.addEventListener("click", createUserAccount);
 
-// Firebase Auth State Change Listener
-onAuthStateChanged(auth, (user) => {
-    if (user) {
-        window.location.href = 'signInUserPage.html';
-        const uid = user.uid;
-    } else {
-        window.location.href = 'index.html';
-    }
-});
+
 
 // Function to create user account
 function createUserAccount() {

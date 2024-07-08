@@ -30,6 +30,17 @@
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
 
+// Firebase Auth State Change Listener
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+      window.location.href = 'signInUserPage.html';
+      const uid = user.uid;
+  } else {
+      // window.location.href = 'index.html';
+  }
+});
+
+// Export  From FireBase
 export { auth ,
          onAuthStateChanged , 
          createUserWithEmailAndPassword , 
