@@ -24,5 +24,3 @@ function signIn (){
     alert(errorMessage)
 });
 }
-
-

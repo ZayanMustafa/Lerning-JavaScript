@@ -46,9 +46,3 @@ export { auth ,
          signInWithEmailAndPassword ,
          signOut,
          };
-
-
-
-
-
-
