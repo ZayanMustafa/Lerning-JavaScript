@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Confirmation</title>
+    <!-- Include Flowbite CSS -->
+    <link href="https://cdn.flowbite.com/latest/flowbite.css" rel="stylesheet">
+    <!-- Include Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Include Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Additional styles can be added here */
+        body {
+            background-color: #f3f4f6;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            width: 360px;
+            padding: 40px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .emoji {
+            font-size: 3rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card flowbite flowbite-background flowbite-shadow-md">
+            <i class="fas fa-sign-out-alt text-4xl text-blue-500 animate__animated animate__bounce"></i>
+            <h1 class="text-2xl font-bold mt-4">Logout Confirmation</h1>
+            <p class="text-gray-600 mt-2">Are you sure you want to logout?</p>
+            <p class="emoji">&#128577;</p>
+            <div class="mt-6">
+                <a href="#" class="flowbite flowbite-button flowbite-button-primary">Logout</a>
+                <a href="#" class="ml-2 text-gray-500 hover:text-gray-600">Cancel</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

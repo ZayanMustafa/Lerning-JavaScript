@@ -1,4 +1,4 @@
-import { auth , signInWithEmailAndPassword } from './fireBase.js';
+import { auth , onAuthStateChanged, signInWithEmailAndPassword } from './fireBase.js';
 
 const userSignEmail = document.getElementById("userEmail");
 const userSignPassword = document.getElementById("userSignInPassword");
