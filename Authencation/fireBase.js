@@ -5,6 +5,7 @@
           onAuthStateChanged, 
           createUserWithEmailAndPassword , 
           signInWithEmailAndPassword,
+          signOut,
          
         } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
  
@@ -45,6 +46,7 @@ export { auth ,
          onAuthStateChanged , 
          createUserWithEmailAndPassword , 
          signInWithEmailAndPassword ,
+         signOut,
          };
 
 
