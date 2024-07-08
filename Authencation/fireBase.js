@@ -68,7 +68,7 @@ function createUserAccount() {
     // setTimeout(() => {
     //   window.location.href = "signIn.html"; // Replace with your desired URL
     // }, 500);
-      window.location.href = "signIn.html"; // Replace with your desired URL
+      // window.location.href = "signIn.html"; // Replace with your desired URL
       alert("ahsdkjfhkjsahdjk")
   })
   .catch((error) => {
@@ -82,4 +82,3 @@ function createUserAccount() {
 
   
 
-export{ auth }
