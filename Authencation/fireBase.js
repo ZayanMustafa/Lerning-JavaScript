@@ -6,7 +6,6 @@
           createUserWithEmailAndPassword , 
           signInWithEmailAndPassword,
           signOut,
-         
         } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
  
 
@@ -34,6 +33,7 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
       window.location.href = 'signInUserPage.html';
       const uid = user.uid;
+      // console.log("User Heay Boss")
   } else { 
       // window.location.href = 'index.html';
   }
