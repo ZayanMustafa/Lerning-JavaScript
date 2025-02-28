@@ -1,1 +1,1 @@
-# Lerning-Java-script
+# Lerning-JavaScript
